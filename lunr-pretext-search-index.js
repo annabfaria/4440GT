@@ -208,6 +208,159 @@ var ptx_lunr_docs = [
   "body": " Expected Utility in Stag Hunt     "
 },
 {
+  "id": "sec-mixed-strategies-nash-equilibrium",
+  "level": "1",
+  "url": "sec-mixed-strategies-nash-equilibrium.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Mixed Strategies Nash Equilibrium",
+  "body": " Mixed Strategies Nash Equilibrium  The normal form game of Rock-Paper-Scissors (RPS) is shown below. Solve it using the underlining method. Can you find a PSNE?   Rock-Paper-Scissors Normal Form           Colm      Rock ( )  Paper ( )  Scissors ( )    Rowan  Rock ( )  0, 0  -1, 1  1, -1     Paper ( )  1, -1  0, 0  -1, 1     Scissors ( )  -1, 1  1, -1  0, 0     Some simultaneous games do not have pure strategy NE, but that does not mean that they do not have Nash equilibria. Ask any kid you know (including your inner child) how to play RPS and they'll tell you: just randomized. Strategic randomization in games such as RPS is using mixed strategy to solve games.  A mixed strategy is a randomization of a player's pure strategies made with specified probabilities. In a mixed strategy, the probabilities range from to and their sum must equal .  Of course, mixed strategy NE require that randomization be done according to the expected payoffs of each action. In RPS, each player has three pure strategies, namely {Rock}, {Paper} and {Scissors}. A mixed strategy in RPS assigns a set probability to playing each of those pure strategies in repeated play. For example: or .  A mixed strategy profile is a Nash equilibrium if each player's mixed strategy is a best response to the other player's best response strategies. Every pure strategy in a Nash mixed strategy must itself be a best response strategy to the other player's strategies.  To find the Mixed Strategy Nash Equilibrium or MSNE ( for Rowan and for Colm or ) in this symmetric zero-sum Rock-Paper-Scissors game, we use the Indifference Principle. Rowan must randomize her strategies such that Colm is completely indifferent between playing his three pure strategies (Rock, Paper, or Scissors). If his expected utilities are identical, he cannot find a predictable pattern to exploit her.  We calculate Colm's expected utility ( ) for each of his choices based on Rowan's strategy probabilities ( ):   If Colm plays Rock:   If Colm plays Paper:   If Colm plays Scissors:    To make Colm indifferent, we set these three expected utility equations equal to each other:   Because probabilities must sum to one ( ), the only mathematical solution to this system is for the differences between all payoffs to be exactly zero, meaning . Splitting the total probability evenly yields the unique mixed strategy equilibrium for Rowan:   Because the game is perfectly symmetric, Colm's strategy ( ) is the same as Rowan's, such that:   If either player deviates from playing each option exactly 33.3% of the time, the other player can immediately shift to a pure strategy and exploit them. The overall expected payoff for both players in this equilibrium is exactly 0.  In a standard two-player game, expected payoffs of MSNE can be calculated by a weighted average of the expected payoffs of each single cell: Probability of Row Probability of Column Player's Payoff in that cell.   Rock-Paper-Scissors Weighted Payouts                Rock ( )  Paper ( )  Scissors ( )     Rock ( )        Paper ( )        Scissors ( )        For Rowan,     Suppose Rowan chooses a different mixed strategy to play, say (playing Rock 20% of the time, Paper 60% , and Scissors 20% ). For a mixed strategy to be a true Nash Equilibrium, it must make the opponent completely indifferent between all of their available choices. If they aren't indifferent, it means they have found a predictable pattern they can exploit. We need to calculate Colm's expected utility ( ) for each of his three pure strategies given Rowan's mixed strategy.   If Colm plays Rock: He ties against Rock ( 20% ), loses to Paper ( 60% ), and wins against Scissors ( 20% ):  If Colm plays Paper: He wins against Rock ( 20% ), ties Paper ( 60% ), and loses to Scissors ( 20% ):  If Colm plays Scissors: He loses to Rock ( 20% ), wins against Paper ( 60% ), and ties Scissors ( 20% ):   For Rowan's strategy to be a Nash Equilibrium, Colm's expected utilities would all need to equal each other. But looking at the math:  Because the expected payoffs are unequal, Colm is not indifferent. He can clearly see that Rowan is heavily favoring Paper , so Colm will completely stop playing Rock and Paper , and deviate to playing pure Scissors 100% of the time. By doing so, Colm secures a positive expected payout of 0.4 per game. Once Colm starts playing only Scissors , Rowan will immediately regret her heavy reliance on Paper and will want to switch to playing Rock . Since both players still have an incentive to unilaterally change their behavior, mathematically cannot be a MSNE.  "
+},
+{
+  "id": "table-rps",
+  "level": "2",
+  "url": "sec-mixed-strategies-nash-equilibrium.html#table-rps",
+  "type": "Table",
+  "number": "2.3.1",
+  "title": "Rock-Paper-Scissors Normal Form",
+  "body": " Rock-Paper-Scissors Normal Form           Colm      Rock ( )  Paper ( )  Scissors ( )    Rowan  Rock ( )  0, 0  -1, 1  1, -1     Paper ( )  1, -1  0, 0  -1, 1     Scissors ( )  -1, 1  1, -1  0, 0    "
+},
+{
+  "id": "table-rps-weighted",
+  "level": "2",
+  "url": "sec-mixed-strategies-nash-equilibrium.html#table-rps-weighted",
+  "type": "Table",
+  "number": "2.3.2",
+  "title": "Rock-Paper-Scissors Weighted Payouts",
+  "body": " Rock-Paper-Scissors Weighted Payouts                Rock ( )  Paper ( )  Scissors ( )     Rock ( )        Paper ( )        Scissors ( )       "
+},
+{
+  "id": "sec-solving-games-sample-questions-1",
+  "level": "1",
+  "url": "sec-solving-games-sample-questions-1.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Solving Games Sample Questions 1",
+  "body": " Solving Games Sample Questions 1  For each of the games below, find the Nash equilibrium\/a.             Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8     Solution: ____________________              Colm      Left  Center  Right    Rowan  Up  3, 2  4, 5  1, 0     Down  5, 4  8, 7  0, 6     Solution: ____________________             Colm      Left  Right    Rowan  Top  4, 3  2, 6     Middle  1, 2  5, 9     Bottom  0, 1  3, 4     Solution: ____________________               Colm      Action 1  Action 2  Action 3  Action 4    Rowan  Strategy A  4, 8  3, 5  9, 2  6, 7     Strategy B  2, 1  7, 9  12, 11  5, 4     Strategy C  8, 3  1, 2  6, 5  10, 9     Solution: ____________________    Refer to the information below on the Matching Pennies game. Solve for the Nash equilibrium and calculate the expected payoffs to the players.   Matching Pennies is a classic zero-sum, strictly competitive game played with two players, Rowan and Colm. Each player has a penny and must simultaneously turn it to either Heads (H) or Tails (T). The strategic stakes are completely opposed: Rowan (Row Player) wants the pennies to match. If both are Heads or both are Tails, Rowan wins Colm's penny (Payoff: to Rowan, to Colm). Colm (Column Player) wants the pennies to mismatch. If one is Heads and the other is Tails, Colm wins Rowan's penny (Payoff: to Rowan, to Colm).            Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1     Solution: ____________________    In October 1962, US intelligence discovered that the Soviet Union, under Nikita Kruschev, was secretly installing nuclear missiles in Cuba. This was a severe security threat to the US. American president JFK was faced with a most important task: to get the Soviets to back out without making the Cold War hot. JFK had two options:   the Hawkish option: an aggressive choice to invade Cuba.  the Dovish option: use diplomacy to solve the Cuban Missile Crisis.   The payoff matrix below ranks each player's preferred outcomes from worst (1) to best (4).           Khrushchev      Dovish (Diplomacy)  Hawkish (Aggression)    JFK  Dovish (Diplomacy)  3, 3  2, 4     Hawkish (Aggression)  4, 2  1, 1     Refer to the game information to answer the following six questions.    What type of game is the Cuban Missile Crisis? Select all that apply.   Sequential game  Simultaneous game  Coordination game  Anti-coordination game     Solve the game.  Solution: ____________________    JFK ultimately decided to implement a naval blockade that prevented new weapons shipments, while demanding the removal of existing arsenal from the island. This suggest JFK chose to commit to what action?  ____________________    We refer to JFK's choice as a way to:   defect.  find a Nash equilibrium.  find a focal point.  create a commitment device.     Given JFK's commitment, what is Khruschev's best action? Explain your answer by describing the outcome of each of Khruschek's possible actions in this scenario.  __________________________________________________    Dean Rusk, Secretary of State during the CMC, concluded: \"We're eyeball to eyeball, and I think the other fellow just blinked.\" What does this indicate about the success of JFK's strategy?  __________________________________________________    In the 2001 movie \"A Beautiful Mind,\" John Nash solves the \"Beauty Game\" while at a bar with his friends, surrounded by flirty women. You can scan the QR code below to watch the scene. The movie is old and about events that took place even earlier (and is also largely made up), so the game is a rather sexist, but let's solve it. In our example, the game involves two players, Ben and Mark, who must choose between approaching the only blonde woman in the crowd or one of the many brunettes. The payoff matrix is shown below.           Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3      QR Code for A Beautiful Mind Scene      What are the PSNE? ____________________    Does movie John Nash get it right? ____________________    "
+},
+{
+  "id": "table-sample-1-1",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-sample-1-1",
+  "type": "Table",
+  "number": "2.4.1",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8    "
+},
+{
+  "id": "table-sample-1-2",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-sample-1-2",
+  "type": "Table",
+  "number": "2.4.2",
+  "title": "",
+  "body": "          Colm      Left  Center  Right    Rowan  Up  3, 2  4, 5  1, 0     Down  5, 4  8, 7  0, 6    "
+},
+{
+  "id": "table-sample-1-3",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-sample-1-3",
+  "type": "Table",
+  "number": "2.4.3",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Top  4, 3  2, 6     Middle  1, 2  5, 9     Bottom  0, 1  3, 4    "
+},
+{
+  "id": "table-sample-1-4",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-sample-1-4",
+  "type": "Table",
+  "number": "2.4.4",
+  "title": "",
+  "body": "           Colm      Action 1  Action 2  Action 3  Action 4    Rowan  Strategy A  4, 8  3, 5  9, 2  6, 7     Strategy B  2, 1  7, 9  12, 11  5, 4     Strategy C  8, 3  1, 2  6, 5  10, 9    "
+},
+{
+  "id": "table-matching-pennies-q",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-matching-pennies-q",
+  "type": "Table",
+  "number": "2.4.5",
+  "title": "",
+  "body": "         Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1    "
+},
+{
+  "id": "table-cuban-missile-q",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-cuban-missile-q",
+  "type": "Table",
+  "number": "2.4.6",
+  "title": "",
+  "body": "         Khrushchev      Dovish (Diplomacy)  Hawkish (Aggression)    JFK  Dovish (Diplomacy)  3, 3  2, 4     Hawkish (Aggression)  4, 2  1, 1    "
+},
+{
+  "id": "table-beautiful-mind-q",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#table-beautiful-mind-q",
+  "type": "Table",
+  "number": "2.4.7",
+  "title": "",
+  "body": "         Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3    "
+},
+{
+  "id": "fig-qr-code",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-1.html#fig-qr-code",
+  "type": "Figure",
+  "number": "2.4.8",
+  "title": "",
+  "body": " QR Code for A Beautiful Mind Scene   "
+},
+{
+  "id": "sec-solving-games-sample-answers-1",
+  "level": "1",
+  "url": "sec-solving-games-sample-answers-1.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Answers",
+  "body": " Answers  For each of the games below, find the Nash equilibrium\/a.             Colm      Left  Right    Rowan  Up       Down  4, 1  2,     Solution:              Colm      Left  Center  Right    Rowan  Up  3, 2  4,  1, 0     Down    0,     Solution:             Colm      Left  Right    Rowan  Top   2,     Middle  1, 2      Bottom  0, 1  3, 4     Solution:               Colm      Act. 1  Act. 2  Act. 3  Act. 4    Rowan  St. A  4,  3, 5  9, 2  6, 7     St. B  2, 1  , 9   5, 4     St. C  , 3  1, 2  6, 5      Solution:    Let be the probability that Rowan plays Heads, and be the probability that Colm plays Heads.  Rowan chooses to make Colm indifferent between playing Heads or Tails:    Colm chooses to make Rowan indifferent between playing Heads or Tails:    Expected Payoff:   Solution: ,    B and D    Solution:    Hawk    create a commitment device.    If the Soviets choose Hawk, the US would be committed to respond with Hawk, triggering a nuclear exchange. This is the worst-case scenario (lowest payoff for either player) If Khrushchev choose Dove, he would avoid war but suffer a massive blow to Soviet global prestige (second lowest payoff to the Soviets, but better than nuclear option).    The Soviets \"correctly\" chose Dove, they swerved, preventing a nuclear conflict.    What are the PSNE?    Does movie John Nash get it right? No. Movie Nash says the equilibrium is {(Brunette, Brunette)}.    "
+},
+{
+  "id": "table-ans-1-1",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-1.html#table-ans-1-1",
+  "type": "Table",
+  "number": "2.5.1",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Up       Down  4, 1  2,    "
+},
+{
+  "id": "table-ans-1-2",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-1.html#table-ans-1-2",
+  "type": "Table",
+  "number": "2.5.2",
+  "title": "",
+  "body": "          Colm      Left  Center  Right    Rowan  Up  3, 2  4,  1, 0     Down    0,    "
+},
+{
+  "id": "table-ans-1-3",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-1.html#table-ans-1-3",
+  "type": "Table",
+  "number": "2.5.3",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Top   2,     Middle  1, 2      Bottom  0, 1  3, 4    "
+},
+{
+  "id": "table-ans-1-4",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-1.html#table-ans-1-4",
+  "type": "Table",
+  "number": "2.5.4",
+  "title": "",
+  "body": "           Colm      Act. 1  Act. 2  Act. 3  Act. 4    Rowan  St. A  4,  3, 5  9, 2  6, 7     St. B  2, 1  , 9   5, 4     St. C  , 3  1, 2  6, 5     "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
