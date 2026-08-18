@@ -100,6 +100,24 @@ var ptx_lunr_docs = [
   "body": " Game Show Decision Time   "
 },
 {
+  "id": "sec-expected-utility",
+  "level": "1",
+  "url": "sec-expected-utility.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Expected Utility",
+  "body": " Expected Utility   Von Neumann-Morgenstern Expected Utility Functions  We can translate players' preferences into von Neumann-Morgenstern expected utility functions. These functions take into account the expected value of all possible probabilistic outcomes. They are particularly useful when rational actors must make decision under risk or uncertainty.  Risk means there are known probabilities to any outcome, whereas uncertainty means these probabilities are not known. In the words of Donald Rumsfeld, \"as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns - the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tends to be the difficult ones.\" Uncertainty is a tricky thing.  The formula for the expected utility of a lottery with possible outcomes is , where is the probability of outcome occurring and is the utility (subjective value) the decision-maker gets from outcome .  Imagine a coin toss. Heads you win $100, Tails you lose and get $0. If the coin is fair, the probability is for either outcome. The Expected Value (EV) of this gamble is just the mathematical average: . Pretty straightforward, right? But how much is that gamble actually worth to you? Do you really hate losing and would rather just have a safe, guaranteed payout? Or do you love being daring and get a thrill from the gamble itself?   \"Lord, I was born a gambling (wo)man!\"    We measure this subjective satisfaction using expected utility. Because human beings value risk differently, does not necessarily equal the $50 expected value. To find out what the gamble is really worth, we have to look at the player's unique risk profile.  We can use von Neumann-Morgenstern utility functions to map out risk preferences for individual players. The curvature of the utility function defines three risk profiles:    Risk-Averse (Concave Function): The utility of a guaranteed payout is strictly greater than the expected utility of a gamble with the exact same expected value. A risk-averse person will gladly pay a premium (like buying insurance) to avoid risk. Risk-averse utility functions might look something like this , a function exhibiting diminishing marginal utility.    Risk-Neutral (Linear Function): The utility function is a straight line. The person cares only about the raw expected value and is completely indifferent between a guaranteed $50 and a coin flip for $100. Risk-neutral utility functions are linear and do not suffer from diminishing returns.    Risk-Seeking (Convex Function): The utility of the gamble is strictly greater than the utility of the guaranteed expected value. This person gets active utility from the thrill of the gamble itself (like someone buying a lottery ticket). Their utility function will resemble , showing they get increasing marginal utility from the thrill of the potential gamble payoff.    If we return to our coin toss example, we can see how risk profiles matter for decision making. Suppose you can choose between a sure $50 or a chance at $100. Let's calculate the expected utility of this scenario for each of the three risk-profiles.    Risk-Averse:   Expected Utility of the Gamble:  Utility of the Certain Outcome:  The Comparison:     Risk-Neutral:   Expected Utility of the Gamble:  Utility of the Certain Outcome:  The Comparison:     Risk-Loving:   Expected Utility of the Gamble:  Utility of the Certain Outcome:  The Comparison:     Your own risk-profile (what your utility function looks like) determines what choice you'd make. Of course, probabilities matter too. If the probability of success in the coin toss decreased to 10%, would the risk-loving person still choose the gamble? No, because the expected utility of the gamble is now , which is less than the utility of the certain outcome: .   "
+},
+{
+  "id": "fig-risk-profiles",
+  "level": "2",
+  "url": "sec-expected-utility.html#fig-risk-profiles",
+  "type": "Figure",
+  "number": "1.4.1",
+  "title": "",
+  "body": " \"Lord, I was born a gambling (wo)man!\"   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
