@@ -118,6 +118,24 @@ var ptx_lunr_docs = [
   "body": " \"Lord, I was born a gambling (wo)man!\"   "
 },
 {
+  "id": "sec-sample-questions",
+  "level": "1",
+  "url": "sec-sample-questions.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Sample Questions",
+  "body": " Sample Questions  For each of the three matrices below, circle the payoffs to the row player, write out the strategy sets for each player and draw the games in extensive form.                                       Strategy Sets:   Row Player: ____________________  Column Player: ____________________                                      Strategy Sets:   Row Player: ____________________  Column Player: ____________________                                  Strategy Sets:   Row Player: ____________________  Column Player: ____________________     A risk-loving sports bettor has a utility function of . They are considering placing a wager on a heavy underdog in a boxing match. They calculate there is a 40% chance the underdog wins, which would pay out $100, and a 60% chance the favorite wins, leaving them with $0. Alternatively, the bettor can simply keep their guaranteed $50 in their wallet. Which option should they choose?    "
+},
+{
+  "id": "sec-sample-answers",
+  "level": "1",
+  "url": "sec-sample-answers.html",
+  "type": "Section",
+  "number": "1.6",
+  "title": "Answers",
+  "body": " Answers                                       Strategy Sets:   Row Player:  Column Player:                                         Strategy Sets:   Row Player:  Column Player:                                     Strategy Sets:   Row Player:  Column Player:        The bettor should take the gamble.    Step 1: Calculate the Expected Utility of the Gamble.     Step 2: Calculate the Utility of the Certain Outcome.     Step 3: Compare.  ( ). The thrill of the potential $100 payout outweighs the safety of keeping the $50.      "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
