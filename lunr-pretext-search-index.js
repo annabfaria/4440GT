@@ -136,6 +136,78 @@ var ptx_lunr_docs = [
   "body": " Answers                                       Strategy Sets:   Row Player:  Column Player:                                         Strategy Sets:   Row Player:  Column Player:                                     Strategy Sets:   Row Player:  Column Player:        The bettor should take the gamble.    Step 1: Calculate the Expected Utility of the Gamble.     Step 2: Calculate the Utility of the Certain Outcome.     Step 3: Compare.  ( ). The thrill of the potential $100 payout outweighs the safety of keeping the $50.      "
 },
 {
+  "id": "sec-nash-equilibrium",
+  "level": "1",
+  "url": "sec-nash-equilibrium.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Nash Equilibrium",
+  "body": " Nash Equilibrium  In the words of the great Phil Heap, a Nash equilibrium (NE) is \"a set of strategies, one for each player, such that each player's strategy is a best response given the strategies chosen by the other players. Each player's strategy is a best response to another player's best strategies.\"  Nash equilibria are stable, but do not necessarily generate the \"best\" outcome or the social optimum. Instead, time and time again, rational individuals, when unable to credibly commit and coordinate, will choose actions that offer inferior payoffs simply because they know other players are also rational.  An NE survives an announcement test: Suppose players all announce their strategies. If those strategies are each player's best response (thus the outcome is a NE), then no player will deviate even after the announcement. An NE is a self-enforcing agreement : There is no need for a third-party to enforce the outcome if that outcome is a NE, since no player can be better off by deviating.  The NE also works as a prediction of play. The NE is a stable point players eventually converge to from trial-and-error. Even if at first we do not reach an equilibrium, over time in repeated play players will choose actions which lead to a NE.  Every game with a finite number of strategies has at least one Nash Equilibrium; however, it may only exist in mixed strategies. Therefore, we solve for Nash equilibria in simultaneous games either by finding pure strategies or mixed strategies, which, put simply, mean:   Pure Strategies: A player chooses a single, specific strategy to play with 100% certainty. Always choosing to play Rock in a Rock-Paper-Scissors game is a pure strategy (albeit not a very good one).  Mixed Strategies: Players randomize and choose among two or more pure strategies according to specific probabilities. Playing a mixed strategy (playing Rock 1\/3, Paper 1\/3, and Scissors 1\/3 of the time) is the only way to avoid systematically losing in RPS.   Let's begin by looking at games solvable by pure strategies.   The \"Underlining Method\" For Finding Best Responses  We're finally ready to find out what Rowan and Colm are going to do. Will they stay silent and cooperate or testify and defect? We can use the underlining method to find Rowan's and Colm's optimal strategies. Let's recap their game:  Rowan and Colm are playing a one-shot simultaneous game and cannot cooperate. Even if they had telepathic abilities, they could not credibly commit to a particular action. So their only option is to figure out the best possible strategy given the other person's strategies.   Prisoner's Dilemma Normal Form          Colm      Stay Silent  Testify    Rowan  Stay Silent  -1, -1  -10, 0     Testify  0, -10  -5, -5     Rowan is thinking \"what should I do if Colm stays silent and what should I do if he testifies?\" Assuming Colm stays silent, staying silent herself would land her in prison for a year (Payoff=-1), whereas testifying would get her out of serving time (Payoff=0). So between the two strategies, she will choose to testify (defect) if Colm stays silent. We should underline the highest payoff for Rowan in the first column. This shows her choice given Colm's potential action.  Now assuming Colm testifies, staying silent would mean 10 years in the pen (Payoff=-10), whereas a little ratting (testifying) would lessen her time inside to five years (Payoff=-5). So between the two strategies, she will choose to testify (defect) if Colm testifies. We should underline the highest payoff for Rowan in the second column.  Colm is thinking the exact same thing and will arrive at the same conclusions. We should underline the highest payoffs for Colm in the first and second rows.  We have found our first Nash equilibrium. This is a pure strategy Nash. We can sometimes skip the word \"equilibrium,\" because why not? Neither Rowan nor Colm can do any better by changing their behavior, given what the other person might do.  You should star ( ) any cells containing Nash equilibria and\/or write out the solution formally:  , where PSNE stands for pure strategy Nash equilibrium.  We find Nash equilibria by the underlining method when a payoff cell contains the best contingent strategy choices of all players. In two player games, where both payoffs are underlined, that's a Nash. If solving a simultaneous game in its extensive form, hold the other player's action constant, which isolates one specific decision node, and compare your payoffs between the branches available at that node. Repeat this for each of the other player's possible actions.  Let's solve a simultaneous game with more actions:  Rowan and Colm are rival royals and must decide what gladiators to send to the Coliseum for the battle that will finally settle the succession war. What champions will they choose? Assume the payoffs are the probability their champion will win.   The Gladiator Game           Colm      MAN  DOG  MOUSE    Rowan  WOMAN  50, 50  60, 40  10, 90     LION  60, 40  70, 30  80, 20     CAT  20, 80  50, 50  90, 10     Rowan sends ______________________ into the arena. Who does Colm send? ______________________   "
+},
+{
+  "id": "table-pd-normal",
+  "level": "2",
+  "url": "sec-nash-equilibrium.html#table-pd-normal",
+  "type": "Table",
+  "number": "2.1.1",
+  "title": "Prisoner’s Dilemma Normal Form",
+  "body": " Prisoner's Dilemma Normal Form          Colm      Stay Silent  Testify    Rowan  Stay Silent  -1, -1  -10, 0     Testify  0, -10  -5, -5    "
+},
+{
+  "id": "table-gladiator",
+  "level": "2",
+  "url": "sec-nash-equilibrium.html#table-gladiator",
+  "type": "Table",
+  "number": "2.1.2",
+  "title": "The Gladiator Game",
+  "body": " The Gladiator Game           Colm      MAN  DOG  MOUSE    Rowan  WOMAN  50, 50  60, 40  10, 90     LION  60, 40  70, 30  80, 20     CAT  20, 80  50, 50  90, 10    "
+},
+{
+  "id": "sec-multiple-psne",
+  "level": "1",
+  "url": "sec-multiple-psne.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Multiple Pure Strategy Nash Equilibria",
+  "body": " Multiple Pure Strategy Nash Equilibria  There are games with multiple pure strategy Nash equilibria, such as Battle of the Sexes, the Stag Hunt (or Assurance Game), and Game of Chicken (or Hawk-Dove). Using the underlining method, these games yield more than one PSNE.   Battle of the Sexes  In the Battle of the Sexes (what a silly name!), two players want to meet up, but can't coordinate (let's say their phones are dead). The players are Rowan and Colm. They must choose to go to either a Football Game (F) or the Opera (O). Rowan prefers the Football Game, while Colm prefers the Opera. Where do they go?   Battle of the Sexes          Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3     Solution: __________________________________________________  Neither PSNE stands out as fundamentally superior to the other, and both players would want to go to the same event (cooperate). The problem is: which event do they go to? They need a focal point . A focal point is an outcome that players naturally converge on without communicating, simply because it possesses some cultural, historical, or psychological prominence that makes it stand out as the obvious \"common sense\" choice. We also refer to focal points as a Schelling point , after Nobel-winning economist Thomas Schelling (1921-2016).  What might be a Schelling point for Battle of the Sexes? ____________________    Game of Chicken - Hawk-Dove - Brinkmanship  The Game of Chicken (also known as the Hawk-Dove game) is a classic game of anti-coordination. Each player can choose to Swerve (S), which is the safe, cooperative action, or Straight (ST), which is the aggressive, defecting action.  If both swerve, they face minor loss of face but remain safe. If one goes straight while the other swerves, the aggressive player wins total prestige while the swerving player is humiliated. However, if both go straight, they result in a catastrophic head-on crash. The payoffs of the game are:   Game of Chicken          Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10     Solution: __________________________________________________  In this simultaneous game, the stakes are high. To ensure a player doesn't end up in the worst possible equilibrium, they have to create a commitment device or credible commitment that does just that: commits the player to a particular action. Schelling proposed the following thought experiment: Imagine you are driving down that single-lane road. How do you guarantee the other driver swerves? You restrict your own choices. Remove the steering wheel from your car and throw it out so the other player sees that the only action you can take is to go straight. This \"forces\" the other player to swerve. Going straight would make them worse off than swerving.    Stag Hunt - Assurance Game  The Stag Hunt is a classic game in which there are two PSNEs. One PSNE gives both players higher payoffs than the other, but any defection risks leaving both players with nothing. The lower payoff PSNE, however, requires no cooperation. Here's the basic game.  Rowan and Colm must decide between hunting a Stag, which provides a high payoff but requires both to cooperate (they cannot hunt the stag alone), or hunting a Hare, which is safer (they can each hunt a hare by themselves) but provides a lower payoff. Let's solve for the equilibria.   Stag Hunt          Colm      Stag  Hare    Rowan  Stag  5, 5  0, 2     Hare  2, 0  2, 2     Solution: __________________________________________________  is a payoff-dominant equilibrium ; it yields the highest possible payoffs for all players compared to the other PSNE. is a risk-dominant equilibrium ; it is the least risky choice when the other player could defect. Rowan and Colm both prefer the Stag if they can trust the other to participate, but they risk ending up with nothing if they hunt the Stag alone.  So when should we expect cooperation? Rowan and Colm face a coordination problem where the highest payoff requires mutual trust. The higher the trust between players (probability of cooperation), the more likely they are to cooperate. The lower the trust, the greater the chances of defection. For example, suppose Rowan assigns a 50\/50 chance to Colm hunting the Stag. Her expected utilities are:   Expected Utility of :  Expected Utility of :   For this level of trust (50% chance of defection), Rowan chooses (cooperation). We can take the idea of trust as probability expectation further and plot the expected utility of each of Rowan's choice based on her belief about Colm's Stag choice, i.e., based on different levels of trust.   Expected Utility in Stag Hunt      Understanding Rowan's expected utility from trusting Colm will help us see that there is a mixed strategy Nash equilibrium in the Stag Hunt (and other games).   "
+},
+{
+  "id": "table-battle-sexes",
+  "level": "2",
+  "url": "sec-multiple-psne.html#table-battle-sexes",
+  "type": "Table",
+  "number": "2.2.1",
+  "title": "Battle of the Sexes",
+  "body": " Battle of the Sexes          Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3    "
+},
+{
+  "id": "table-chicken",
+  "level": "2",
+  "url": "sec-multiple-psne.html#table-chicken",
+  "type": "Table",
+  "number": "2.2.2",
+  "title": "Game of Chicken",
+  "body": " Game of Chicken          Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10    "
+},
+{
+  "id": "table-stag-hunt",
+  "level": "2",
+  "url": "sec-multiple-psne.html#table-stag-hunt",
+  "type": "Table",
+  "number": "2.2.3",
+  "title": "Stag Hunt",
+  "body": " Stag Hunt          Colm      Stag  Hare    Rowan  Stag  5, 5  0, 2     Hare  2, 0  2, 2    "
+},
+{
+  "id": "fig-stag-hunt-graph",
+  "level": "2",
+  "url": "sec-multiple-psne.html#fig-stag-hunt-graph",
+  "type": "Figure",
+  "number": "2.2.4",
+  "title": "",
+  "body": " Expected Utility in Stag Hunt     "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
