@@ -1,1 +1,1 @@
-{"source/main.ptx": ["my-great-book"], "source/frontmatter.ptx": ["frontmatter", "front-colophon"], "source/ch-chapter-title.ptx": ["ch-chapter-title"], "source/sec-section-name.ptx": ["sec-section-name"], "source/backmatter.ptx": ["backmatter"]}
+{"source/main.ptx": ["my-great-book"], "source/frontmatter.ptx": ["frontmatter", "preface"], "source/ch_intro.ptx": ["ch-intro-to-game-theory", "sec-what-is-game-theory"], "source/backmatter.ptx": ["backmatter"]}
