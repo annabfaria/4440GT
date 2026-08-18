@@ -5,5 +5,5 @@ body, html, .ptx-content {
 
 /* Change the background of the body and the main reading container */
 body, .ptx-page, #ptx-main, .ptx-content, .ptx-main-wrapper {
-  background-color: #fffff0 !important;
+  background-color: #F7E6CA !important;
 }
