@@ -82,6 +82,24 @@ var ptx_lunr_docs = [
   "body": " Prisoner's Dilemma Extensive Form     "
 },
 {
+  "id": "sec-gt-assumptions",
+  "level": "1",
+  "url": "sec-gt-assumptions.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "GT Assumptions",
+  "body": " GT Assumptions   Let's expand on the key three assumptions in Game Theory. We may violate them later on in the semester.    Rationality  Rationality means that players engage in a \"perfectly calculating pursuit of a complete and internally consistent objective payoff function.\" In other words, players do the best they can with the information they have about their and other players' payoffs. Players do not make systematic mistakes nor do they deliberately act in a way that goes against their goal.    Preferences    Completeness refers to the fact that all preferences are known.    Transitivity refers to the fact that if I prefer to and to then I must prefer to ( ).    Continuity means that there is a \"tipping point\" between being better than and worse than a given middle option. Mathematically it means that given , then there exists a probability between and such that .   Continuity and the Tipping Point    Imagine you are participating in a game show in which you are given two options: you can go through a series of physically-demanding obstacles with the possibility of a $1,000 prize (or $0 if failed) or you can take home $200. You clearly prefer $1,000 to $200 to $0. So how do you choose?  You have three strictly ordered outcomes:   (Best): Winning $1,000.  (Middle): Taking a guaranteed $200.  (Worst): Leaving with $0.   Because , the continuity axiom guarantees there is a tipping point. In this scenario, the probability of success is not a random coin flip; is your perceived likelihood of completing the obstacle course. It represents your confidence in your own physical abilities. What is your tipping point?  We can find the that makes you indifferent between taking on the obstacles or taking the $200. Given and =$1,000, =$200 and =$0, then . Therefore , which is your tipping point. This means that if you think the probability you'll succeed in the obstacle course is greater than 20%, you'll take that on. If you aren't so sure of your physical prowess, and think there's a less than one in five chance you'll make it, you take the $200 and run the other way.    Independence means that mixing two options with the exact same third, irrelevant option should not change your underlying preference. If you prefer over in isolation, then any gamble involving should be preferred to the exact same gamble involving . In other words, given then for any and between and , .  Returning to our game show example. Imagine that rather than making a choice to tackle an obstacle course, you were given the choice of two probability or mystery boxes:   Box 1: A 10% chance of taking home $1,000 and a 90% chance of going home empty handed.  Box 2: A 10% chance of taking home $200 and a 90% chance of going home empty handed.   You would, of course, choose Box 1 and this choice is consistent with the independence axiom.      Common Knowledge  I know that you know that I know that you know.   "
+},
+{
+  "id": "fig-continuity-tipping-point",
+  "level": "2",
+  "url": "sec-gt-assumptions.html#fig-continuity-tipping-point",
+  "type": "Figure",
+  "number": "1.3.1",
+  "title": "",
+  "body": " Continuity and the Tipping Point   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
