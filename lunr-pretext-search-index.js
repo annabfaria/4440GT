@@ -240,8 +240,8 @@ var ptx_lunr_docs = [
   "url": "sec-solving-games-sample-questions-1.html",
   "type": "Section",
   "number": "2.4",
-  "title": "Sample Questions",
-  "body": " Sample Questions  For each of the games below, find the Nash equilibrium\/a.             Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8     Solution: ____________________              Colm      Left  Center  Right    Rowan  Up  3, 2  4, 5  1, 0     Down  5, 4  8, 7  0, 6     Solution: ____________________             Colm      Left  Right    Rowan  Top  4, 3  2, 6     Middle  1, 2  5, 9     Bottom  0, 1  3, 4     Solution: ____________________               Colm      Action 1  Action 2  Action 3  Action 4    Rowan  Strategy A  4, 8  3, 5  9, 2  6, 7     Strategy B  2, 1  7, 9  12, 11  5, 4     Strategy C  8, 3  1, 2  6, 5  10, 9     Solution: ____________________    Refer to the information below on the Matching Pennies game. Solve for the Nash equilibrium and calculate the expected payoffs to the players.   Matching Pennies is a classic zero-sum, strictly competitive game played with two players, Rowan and Colm. Each player has a penny and must simultaneously turn it to either Heads (H) or Tails (T). The strategic stakes are completely opposed: Rowan (Row Player) wants the pennies to match. If both are Heads or both are Tails, Rowan wins Colm's penny (Payoff: to Rowan, to Colm). Colm (Column Player) wants the pennies to mismatch. If one is Heads and the other is Tails, Colm wins Rowan's penny (Payoff: to Rowan, to Colm).            Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1     Solution: ____________________    In October 1962, US intelligence discovered that the Soviet Union, under Nikita Kruschev, was secretly installing nuclear missiles in Cuba. This was a severe security threat to the US. American president JFK was faced with a most important task: to get the Soviets to back out without making the Cold War hot. JFK had two options:   the Hawkish option: an aggressive choice to invade Cuba.  the Dovish option: use diplomacy to solve the Cuban Missile Crisis.   The payoff matrix below ranks each player's preferred outcomes from worst (1) to best (4).           Khrushchev      Dovish (Diplomacy)  Hawkish (Aggression)    JFK  Dovish (Diplomacy)  3, 3  2, 4     Hawkish (Aggression)  4, 2  1, 1     Refer to the game information to answer the following six questions.    What type of game is the Cuban Missile Crisis? Select all that apply.   Sequential game  Simultaneous game  Coordination game  Anti-coordination game     Solve the game.  Solution: ____________________    JFK ultimately decided to implement a naval blockade that prevented new weapons shipments, while demanding the removal of existing arsenal from the island. This suggest JFK chose to commit to what action?  ____________________    We refer to JFK's choice as a way to:   defect.  find a Nash equilibrium.  find a focal point.  create a commitment device.     Given JFK's commitment, what is Khruschev's best action? Explain your answer by describing the outcome of each of Khruschek's possible actions in this scenario.  __________________________________________________    Dean Rusk, Secretary of State during the CMC, concluded: \"We're eyeball to eyeball, and I think the other fellow just blinked.\" What does this indicate about the success of JFK's strategy?  __________________________________________________    In the 2001 movie \"A Beautiful Mind,\" John Nash solves the \"Beauty Game\" while at a bar with his friends, surrounded by flirty women. You can scan the QR code below to watch the scene. The movie is old and about events that took place even earlier (and is also largely made up), so the game is a rather sexist, but let's solve it. In our example, the game involves two players, Ben and Mark, who must choose between approaching the only blonde woman in the crowd or one of the many brunettes. The payoff matrix is shown below.           Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3      QR Code for A Beautiful Mind Scene      What are the PSNE? ____________________    Does movie John Nash get it right? ____________________    "
+  "title": "Questions",
+  "body": " Questions  For each of the games below, find the Nash equilibrium\/a.             Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8     Solution: ____________________              Colm      Left  Center  Right    Rowan  Up  3, 2  4, 5  1, 0     Down  5, 4  8, 7  0, 6     Solution: ____________________             Colm      Left  Right    Rowan  Top  4, 3  2, 6     Middle  1, 2  5, 9     Bottom  0, 1  3, 4     Solution: ____________________               Colm      Action 1  Action 2  Action 3  Action 4    Rowan  Strategy A  4, 8  3, 5  9, 2  6, 7     Strategy B  2, 1  7, 9  12, 11  5, 4     Strategy C  8, 3  1, 2  6, 5  10, 9     Solution: ____________________    Refer to the information below on the Matching Pennies game. Solve for the Nash equilibrium and calculate the expected payoffs to the players.   Matching Pennies is a classic zero-sum, strictly competitive game played with two players, Rowan and Colm. Each player has a penny and must simultaneously turn it to either Heads (H) or Tails (T). The strategic stakes are completely opposed: Rowan (Row Player) wants the pennies to match. If both are Heads or both are Tails, Rowan wins Colm's penny (Payoff: to Rowan, to Colm). Colm (Column Player) wants the pennies to mismatch. If one is Heads and the other is Tails, Colm wins Rowan's penny (Payoff: to Rowan, to Colm).            Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1     Solution: ____________________    In October 1962, US intelligence discovered that the Soviet Union, under Nikita Kruschev, was secretly installing nuclear missiles in Cuba. This was a severe security threat to the US. American president JFK was faced with a most important task: to get the Soviets to back out without making the Cold War hot. JFK had two options:   the Hawkish option: an aggressive choice to invade Cuba.  the Dovish option: use diplomacy to solve the Cuban Missile Crisis.   The payoff matrix below ranks each player's preferred outcomes from worst (1) to best (4).           Khrushchev      Dovish (Diplomacy)  Hawkish (Aggression)    JFK  Dovish (Diplomacy)  3, 3  2, 4     Hawkish (Aggression)  4, 2  1, 1     Refer to the game information to answer the following six questions.    What type of game is the Cuban Missile Crisis? Select all that apply.   Sequential game  Simultaneous game  Coordination game  Anti-coordination game     Solve the game.  Solution: ____________________    JFK ultimately decided to implement a naval blockade that prevented new weapons shipments, while demanding the removal of existing arsenal from the island. This suggest JFK chose to commit to what action?  ____________________    We refer to JFK's choice as a way to:   defect.  find a Nash equilibrium.  find a focal point.  create a commitment device.     Given JFK's commitment, what is Khruschev's best action? Explain your answer by describing the outcome of each of Khruschek's possible actions in this scenario.  __________________________________________________    Dean Rusk, Secretary of State during the CMC, concluded: \"We're eyeball to eyeball, and I think the other fellow just blinked.\" What does this indicate about the success of JFK's strategy?  __________________________________________________    In the 2001 movie \"A Beautiful Mind,\" John Nash solves the \"Beauty Game\" while at a bar with his friends, surrounded by flirty women. You can scan the QR code below to watch the scene. The movie is old and about events that took place even earlier (and is also largely made up), so the game is a rather sexist, but let's solve it. In our example, the game involves two players, Ben and Mark, who must choose between approaching the only blonde woman in the crowd or one of the many brunettes. The payoff matrix is shown below.           Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3      QR Code for A Beautiful Mind Scene      What are the PSNE? ____________________    Does movie John Nash get it right? ____________________    "
 },
 {
   "id": "table-sample-1-1",
@@ -548,6 +548,159 @@ var ptx_lunr_docs = [
   "number": "2.9.1",
   "title": "",
   "body": "         Incumbent      Accommodate  Fight    Entrant  Enter  1, 1  -1, -1     Stay Out  0, 2  0, 2    "
+},
+{
+  "id": "solving-games-sample-questions-3",
+  "level": "1",
+  "url": "solving-games-sample-questions-3.html",
+  "type": "Section",
+  "number": "2.10",
+  "title": "Sample Questions 3: Solving Games",
+  "body": " Sample Questions 3: Solving Games  Solve the following games by backwards induction.    Entry Deterrence Game with Multiple Levels of Response:       Solution: _____________________________________________    Adam and Eve in the Garden of Eden Game: This is a sequential game between God and Adam & Eve (AE), where God first decides whether to impose constraints in the Garden of Eden, and AE subsequently chooses whether to adhere to those rules.       Solution: _____________________________________________    The Munich Agreement Game: The 1938 Munich Agreement was a diplomatic settlement in which Great Britain and France agreed to let Nazi Germany annex the Sudetenland region of Czechoslovakia. British Prime Minister Neville Chamberlain made this concession as part of an appeasement strategy, hoping that satisfying Hitler's immediate territorial demands would satisfy him and prevent the outbreak of a wider European war. The game below illustrates the \"gamble\" Chamberlain was facing.  In this game of imperfect information, Nature first determines whether Hitler is \"nice\" (with probability ) or \"mean\" (with probability ), a type that Chamberlain cannot observe before choosing to concede or stand firm. Hitler then observes Chamberlain's action and decides between war and no war, with his preferences directly dictated by his hidden type.       Solution: _____________________________________________    Discrimination in Hiring Game (in Baseball): This sequential draft game illustrates the economic cost of prejudice in a competitive market by modeling one team with purely skill-based valuations (Dodgers) and another with racially biased preferences (Red Sox). By anticipating the discriminating team's sub-optimal choices, the rational team can strategically defer drafting the objectively best player to secure a superior overall roster. This game demonstrates how discrimination creates inefficiencies that non-discriminating actors can exploit for a competitive advantage.    PLAYER  SKILL RATING  RACE  VALUE TO DODGERS  VALUE TO RED SOX   1 30 B 30 20  2 25 W 25 25  3 22 W 22 22  4 20 B 20 10        Solution: _____________________________________________    The Centipede Game: Two players take turns deciding whether to \"Take\" a larger share of a continuously growing pot of money, which ends the game, or \"Pass\" the decision to the other player, which grows the pot, but risks the other player taking it.       Solution: _____________________________________________    "
+},
+{
+  "id": "solving-games-sample-questions-3-3-1-1",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Entry Deterrence Game with Multiple Levels of Response: "
+},
+{
+  "id": "solving-games-sample-questions-3-3-1-2",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-1-2",
+  "type": "Figure",
+  "number": "2.10.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "solving-games-sample-questions-3-3-2-1",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Adam and Eve in the Garden of Eden Game: "
+},
+{
+  "id": "solving-games-sample-questions-3-3-2-2",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-2-2",
+  "type": "Figure",
+  "number": "2.10.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "solving-games-sample-questions-3-3-3-1",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Munich Agreement Game: "
+},
+{
+  "id": "solving-games-sample-questions-3-3-3-3",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-3-3",
+  "type": "Figure",
+  "number": "2.10.3",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "solving-games-sample-questions-3-3-4-1",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discrimination in Hiring Game (in Baseball): "
+},
+{
+  "id": "solving-games-sample-questions-3-3-4-3",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-4-3",
+  "type": "Figure",
+  "number": "2.10.4",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "solving-games-sample-questions-3-3-5-1",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Centipede Game: "
+},
+{
+  "id": "solving-games-sample-questions-3-3-5-2",
+  "level": "2",
+  "url": "solving-games-sample-questions-3.html#solving-games-sample-questions-3-3-5-2",
+  "type": "Figure",
+  "number": "2.10.5",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "solving-games-sample-answers-3",
+  "level": "1",
+  "url": "solving-games-sample-answers-3.html",
+  "type": "Section",
+  "number": "2.11",
+  "title": "Answers",
+  "body": " Answers    Entry Deterrence Game with Multiple Levels of Response:  This is solved by finding the Nash Equilibrium of the simultaneous subgame and then folding back to the initial node.   Subgame: Looking at the second number (Incumbent's payoff), the Incumbent's dominant strategy is Medium ( ; ; ). Looking at the first number (Entrant's payoff), the Entrant's dominant strategy is also Medium. (If I=High, E's best is . If I=Medium, E's best is . If I=Low, E's best is ). Thus, the subgame equilibrium is (Medium, Medium) yielding a payoff of .  Initial Node: The Entrant compares the payoff from Not Enter ( ) to the anticipated payoff from entering ( ). Since , the Entrant chooses to Enter.  Equilibrium: SPNE is {Enter, (Medium, Medium)}.     Adam and Eve in the Garden of Eden Game:  We solve by backward induction starting from the terminal decision nodes (AE).   AE's Nodes: If God Imposes Constraints, AE compares Adhere ( ) to Do Not Adhere ( ) and chooses Do Not Adhere. If God Does Not Impose, AE compares Adhere ( ) to Do Not Adhere ( ) and chooses Do Not Adhere.  God's Node: Anticipating that AE will choose Do Not Adhere in either scenario, God compares the resulting payoffs: Impose Constraints yields , while Do Not Impose yields . Since , God chooses to Impose Constraints.  Equilibrium: SPNE is {Impose Constraints, (Do Not Adhere, Do Not Adhere)}.     The Munich Agreement Game:  We solve by identifying Hitler's optimal actions at the terminal nodes and calculating Chamberlain's expected utility (EU) at the information set.   Hitler's Strategy: If Hitler is Nice , he prefers No War if Chamberlain Concedes ( ) and War if Chamberlain Stands Firm ( ). If Hitler is Mean , he prefers War regardless of Chamberlain's choice ( and ).   Chamberlain's Choice: Chamberlain must maximize his expected utility based on the probability that Hitler is Nice.     Equilibrium: Chamberlain will choose to Concede if (which simplifies to ). He will choose to Stand Firm if .     Discrimination in Hiring Game (in Baseball):  The Subgame Perfect Nash Equilibrium is .    The Centipede Game:  Using backward induction, the Subgame Perfect Nash Equilibrium is .    "
+},
+{
+  "id": "solving-games-sample-answers-3-2-1-1",
+  "level": "2",
+  "url": "solving-games-sample-answers-3.html#solving-games-sample-answers-3-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Entry Deterrence Game with Multiple Levels of Response: "
+},
+{
+  "id": "solving-games-sample-answers-3-2-2-1",
+  "level": "2",
+  "url": "solving-games-sample-answers-3.html#solving-games-sample-answers-3-2-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Adam and Eve in the Garden of Eden Game: "
+},
+{
+  "id": "solving-games-sample-answers-3-2-3-1",
+  "level": "2",
+  "url": "solving-games-sample-answers-3.html#solving-games-sample-answers-3-2-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Munich Agreement Game: "
+},
+{
+  "id": "solving-games-sample-answers-3-2-4-1",
+  "level": "2",
+  "url": "solving-games-sample-answers-3.html#solving-games-sample-answers-3-2-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discrimination in Hiring Game (in Baseball): "
+},
+{
+  "id": "solving-games-sample-answers-3-2-5-1",
+  "level": "2",
+  "url": "solving-games-sample-answers-3.html#solving-games-sample-answers-3-2-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Centipede Game: "
 },
 {
   "id": "backmatter-2",
