@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Preface",
   "number": "",
   "title": "Preface",
-  "body": " Preface  Welcome to the interactive course materials for 4440 Game Theory. These materials are designed to accompany our lectures and provide a hands-on approach to modeling strategic interactions and economic decision-making.  "
+  "body": " Preface  Welcome to Game Theory for Economics, Political Science and Philosophy. I have designed this \"textbook\" for Game Theory students in these disciplines. This work is part of the upper-level course Decision and Game Theory I teach at the University of Colorado Colorado Springs.   Disclaimer: I have been working for several months and with the assistance of AI, I have created more content than I could have ever imagined. Without AI, this textbook would not have lovely Best Response diagrams or Peanuts-inspired drawings. Nor would there be so many sample questions to choose from and improve students’ immersion. In fact, this textbook would not exist, since I am using AI to write its code on Github. Hooray for technological improvements that enhance the human experience!  "
 },
 {
   "id": "sec-what-is-game-theory",
