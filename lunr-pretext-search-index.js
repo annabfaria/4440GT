@@ -406,6 +406,132 @@ var ptx_lunr_docs = [
   "body": " Combined Best Response Functions     "
 },
 {
+  "id": "sec-solving-games-sample-questions-2",
+  "level": "1",
+  "url": "sec-solving-games-sample-questions-2.html",
+  "type": "Section",
+  "number": "2.7",
+  "title": "Questions",
+  "body": " Questions  For each of the games below, find MSNE, if any. Plot the equilibria.              Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10         Solution: __________________________________________________              Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8         Solution: __________________________________________________              Khrushchev      Dove  Hawk    JFK  Dove  3, 3  2, 4     Hawk  4, 2  1, 1         Solution: __________________________________________________              Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3         Solution: __________________________________________________              Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1         Solution: __________________________________________________              Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3         Solution: __________________________________________________    Based on the best response diagram below, identify the following:    The best response functions for each player.  Any strictly dominant strategies (and for which player).  Any PSNE.  Any MSNE.  The strategic meaning of the purple vertical line segment.       "
+},
+{
+  "id": "table-sample-2-1",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-1",
+  "type": "Table",
+  "number": "2.7.1",
+  "title": "",
+  "body": "         Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10    "
+},
+{
+  "id": "table-sample-2-2",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-2",
+  "type": "Table",
+  "number": "2.7.2",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Up  10, 5  6, 2     Down  4, 1  2, 8    "
+},
+{
+  "id": "table-sample-2-3",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-3",
+  "type": "Table",
+  "number": "2.7.3",
+  "title": "",
+  "body": "         Khrushchev      Dove  Hawk    JFK  Dove  3, 3  2, 4     Hawk  4, 2  1, 1    "
+},
+{
+  "id": "table-sample-2-4",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-4",
+  "type": "Table",
+  "number": "2.7.4",
+  "title": "",
+  "body": "         Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3    "
+},
+{
+  "id": "table-sample-2-5",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-5",
+  "type": "Table",
+  "number": "2.7.5",
+  "title": "",
+  "body": "         Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1    "
+},
+{
+  "id": "table-sample-2-6",
+  "level": "2",
+  "url": "sec-solving-games-sample-questions-2.html#table-sample-2-6",
+  "type": "Table",
+  "number": "2.7.6",
+  "title": "",
+  "body": "         Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3    "
+},
+{
+  "id": "sec-solving-games-sample-answers-2",
+  "level": "1",
+  "url": "sec-solving-games-sample-answers-2.html",
+  "type": "Section",
+  "number": "2.8",
+  "title": "Answers",
+  "body": " Answers  For each of the games below, find MSNE, if any. Plot the equilibria.               Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10     Let be the prob. that Colm plays Swerve, and be the prob. Straight.  Rowan's expected utility for playing Swerve is:  Rowan's expected utility for playing Straight is:  Expected utility of Swerving than going Straight :  Rowan will swerve if .       Solution:      Rowan has a strictly dominant strategy to always play Up, so there is no MSNE.           Colm      Left  Right    Rowan  Up             Let be the probability that Rowan plays Up, and be the probability that Rowan plays Down.  Colm's :  Colm's :  His indifference point is:  Colm will choose Left if .       Solution:               Khrushchev      Dove  Hawk    JFK  Dove  3, 3  2, 4     Hawk  4, 2  1, 1     Let be the probability that Khrushchev plays Dove.  JFK's expected utilities are and .  JFK indifferent: .  JFK plays Dove if:       Solution: and               Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3     For Rowan's expected utilities to equal:     Rowan plays Football if  For Colm's expected utilities to equal:     Colm plays Football if       Solution: and               Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1     For Rowan's expected utilities to equal:     Rowan plays Heads if  For Colm's expected utilities to equal:     Colm plays Heads if       Solution: and               Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3     For Mark's expected utilities to equal:     Mark plays Blonde if  For Ben's expected utilities to equal:     Ben plays Blonde if       Solution: and    Based on the best response diagram below, identify the following:    The best response functions for each player. Rowan's BR function is in purple. Colm's is in orange.  Any strictly dominant strategies (and for which player). Colm has a strictly dominant strategy (Left).  Any PSNE. (Up, Left)  Any MSNE. None.  The strategic meaning of the purple vertical line segment. It is Rowan's indifference point between playing her strategies.       "
+},
+{
+  "id": "table-ans-2-1",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-1",
+  "type": "Table",
+  "number": "2.8.1",
+  "title": "",
+  "body": "         Colm      Swerve  Straight    Rowan  Swerve  0, 0  -1, 2     Straight  2, -1  -10, -10    "
+},
+{
+  "id": "table-ans-2-2",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-2",
+  "type": "Table",
+  "number": "2.8.2",
+  "title": "",
+  "body": "         Colm      Left  Right    Rowan  Up            "
+},
+{
+  "id": "table-ans-2-3",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-3",
+  "type": "Table",
+  "number": "2.8.3",
+  "title": "",
+  "body": "         Khrushchev      Dove  Hawk    JFK  Dove  3, 3  2, 4     Hawk  4, 2  1, 1    "
+},
+{
+  "id": "table-ans-2-4",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-4",
+  "type": "Table",
+  "number": "2.8.4",
+  "title": "",
+  "body": "         Colm      Football  Opera    Rowan  Football  3, 2  0, 0     Opera  0, 0  2, 3    "
+},
+{
+  "id": "table-ans-2-5",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-5",
+  "type": "Table",
+  "number": "2.8.5",
+  "title": "",
+  "body": "         Colm      Heads  Tails    Rowan  Heads  1, -1  -1, 1     Tails  -1, 1  1, -1    "
+},
+{
+  "id": "table-ans-2-6",
+  "level": "2",
+  "url": "sec-solving-games-sample-answers-2.html#table-ans-2-6",
+  "type": "Table",
+  "number": "2.8.6",
+  "title": "",
+  "body": "         Ben      Blonde  Brunette    Mark  Blonde  1, 1  4, 2     Brunette  2, 4  3, 3    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
