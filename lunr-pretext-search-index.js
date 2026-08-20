@@ -703,6 +703,96 @@ var ptx_lunr_docs = [
   "body": "The Centipede Game: "
 },
 {
+  "id": "sec-when-to-cooperate",
+  "level": "1",
+  "url": "sec-when-to-cooperate.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "When Do We Need to Cooperate?",
+  "body": " When Do We Need to Cooperate?  We have so far discussed many games. Let's recap the distinction between cooperative and non-cooperative games:   Non-Cooperative Games: Each player chooses and implements his actions individually, without any joint-action agreements directly enforced by other players.  Cooperative Games: Joint agreements can be directly implemented and enforced. Enforcement here is key.   The goal now is to come up with ways to incentivize players in non-cooperative games to cooperate and\/or coordinate their actions.  We begin with what is known as the Folk Theorem The name Folk Theorem comes from the fact that this result was well-known to game-theorists before any one person could formalize it. : Cooperation is sustainable in a repeated game as long as the players are patient enough and the chance that play continues is reasonably high.   Primitive Hunting Game  To illustrate the Folk Theorem and look at its implications, let's explore the Primitive Hunting Game.  Two hunters, Rowan and Colm, go out to hunt independently. On any given day, only one is successful in killing an animal and both players are equally skilled at hunting ( ). The food provides 10 utils. The hunter who is successful can either share the food and split the utils or not share the food. If a hunter does not get any food, they are so weak that they get -20 utils.    a. If Colm is successful           Colm      SHARE  DON'T    Rowan  SHARE  5, 5  -20, 10     DON'T  5, 5  -20, 10       b. If Rowan is successful           Colm      SHARE  DON'T    Rowan  SHARE  5, 5  5, 5     DON'T  10, -20  10, -20       Now here's the Sharing Dilemma in this Game: While the hunters would be better off if they shared the animal, neither has an incentive to do so. Why? First, we should calculate the expected payoffs if success probabilities are and solve the game.  For Rowan (Colm's payoffs are the mirrors of hers):    If Colm SHARES:   and Rowan SHARES:  and Rowan DON'T:     If Colm DON'T:   and Rowan SHARES:  and Rowan DON'T:      Expected Payoffs in Primitive Hunting Game          Colm      SHARE  DON'T    Rowan  SHARE  , 5  , 7.5     DON'T  , -7.5  , -5     In this game, the NE is {DON'T, DON'T}, the inferior, but self-enforcing outcome to {SHARE, SHARE}. Selten's Theorem tells us that in repeated play, lack of cooperation will persist. For Rowan and Colm, the NE action is their security level. Security level refers to lowest possible payoff to a player for playing a particular strategy. In a game with a known finite number of periods, playing their security level strategies is the best they can do (absent an external coordination mechanism). In a game with infinite or indefinite t periods, any payoff combination in the red area below is possible (and better or indifferent for either player) if they are patient enough.   Feasible Payoff Region and Security Levels      The next step is to figure out how patient they would have to be to ensure cooperation.   "
+},
+{
+  "id": "sec-when-to-cooperate-3-1-1",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#sec-when-to-cooperate-3-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Non-Cooperative Games: "
+},
+{
+  "id": "sec-when-to-cooperate-3-2-1",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#sec-when-to-cooperate-3-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Cooperative Games: "
+},
+{
+  "id": "table-colm-successful",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#table-colm-successful",
+  "type": "Table",
+  "number": "3.1.1",
+  "title": "",
+  "body": "         Colm      SHARE  DON'T    Rowan  SHARE  5, 5  -20, 10     DON'T  5, 5  -20, 10    "
+},
+{
+  "id": "table-rowan-successful",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#table-rowan-successful",
+  "type": "Table",
+  "number": "3.1.2",
+  "title": "",
+  "body": "         Colm      SHARE  DON'T    Rowan  SHARE  5, 5  5, 5     DON'T  10, -20  10, -20    "
+},
+{
+  "id": "table-sharing-dilemma-expected",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#table-sharing-dilemma-expected",
+  "type": "Table",
+  "number": "3.1.3",
+  "title": "Expected Payoffs in Primitive Hunting Game",
+  "body": " Expected Payoffs in Primitive Hunting Game          Colm      SHARE  DON'T    Rowan  SHARE  , 5  , 7.5     DON'T  , -7.5  , -5    "
+},
+{
+  "id": "fig-primitive-hunting-feasible-region",
+  "level": "2",
+  "url": "sec-when-to-cooperate.html#fig-primitive-hunting-feasible-region",
+  "type": "Figure",
+  "number": "3.1.4",
+  "title": "",
+  "body": " Feasible Payoff Region and Security Levels     "
+},
+{
+  "id": "sec-discount-factor-contingent-strategies",
+  "level": "1",
+  "url": "sec-discount-factor-contingent-strategies.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "The Discount Factor and Contingent Strategies",
+  "body": " The Discount Factor and Contingent Strategies   The Discount Factor  Cooperation is possible as long as players value the future at least somewhat and expect play to continue. To measure a player's patience level, we use the discount factor  (delta), which is the factor by which players discount future payoffs. In other words, what is the present value of a payoff received in the future? How much do we value, in today's terms, the utility or reward received in some future period?  We know that:   .  tomorrow today.  tomorrow today.  tomorrow today, i.e., the future has little value today.  A low implies little incentive to cooperate because future payoffs receive little weight in a player's intertemporal payoff maximization.   The discount factor is a function of the probability of future play ( ) and the interest rate ( ).   The higher the probability of continued play (higher ), the higher the discount factor ( ). The higher the interest rate ( ), the lower the patience level ( ). A higher interest rate implies that a player requires a larger premium for waiting for future payoffs. If , then I require an extra dime in period 2 for every dollar postponed from period 1. If , then I require only a nickel.    Contingent Strategies  In indefinitely repeated games, players use contingent strategies to induce cooperation. By making today's cooperation conditional upon the other player's history, these strategies create a credible mechanism for accountability. We focus on trigger strategies and their two most common forms: Grim and Tit-for-Tat.  A trigger strategy is a contingent strategy in which non-cooperation by one player leads to punishment by the other player through defection. Trigger strategies are often used because the threat of a specific, lasting reaction serves as the primary enforcement for maintaining trust. The two main trigger strategies are:   Grim Strategy : Always defect after the other player defects once.  Tit-for-Tat : Defect once after the other player defects once, or choose in period the action the other player chose in period .   In order to ensure cooperation, we want to find the critical value of ( ) that guarantees cooperation yields higher payoffs than defection. Consider the generalized Prisoner's Dilemma payoff matrix, where :   Generalized Prisoner's Dilemma        Cooperate  Defect    Cooperate      Defect       The Prisoners' Dilemma is a type of Social Dilemma (SD), or Social Coordination Problem . A SD is a game in which Defect is a dominant strategy [condition 1] and the outcome (Defect, Defect) yields lower payoffs than (Cooperate, Cooperate) [condition 2].  To solve for , we use the infinite geometric series formula:   For the Grim trigger, we compare cooperating forever to defecting once and being punished forever:   For Tit-for-Tat, we compare cooperating forever to defecting once (getting ), being punished once (getting ), and then returning to cooperation:   Let's consider Rowan and Colm's Primitive Hunting Game. If the hunters were only in the woods for a single day, would they choose to share? But is there a chance they'll share their catch as long as they continue to hunt together?   Primitive Hunting Game          Colm      Share  Don't    Rowan  Share  5, 5  -7.5, 7.5     Don't  7.5, -7.5  -5, -5     Let's find their critical values of for each trigger strategy (the game is symmetric, so we only need to do it once).   Grim:  Tit-for-Tat:   Since Tit-for-Tat requires a lower threshold for cooperation ( ) than the Grim Trigger ( ), it successfully sustains cooperation among hunters who are less concerned about the future. Sometimes, a flexible reaction is more effective than a permanent grudge.   "
+},
+{
+  "id": "table-generalized-pd",
+  "level": "2",
+  "url": "sec-discount-factor-contingent-strategies.html#table-generalized-pd",
+  "type": "Table",
+  "number": "3.2.1",
+  "title": "Generalized Prisoner’s Dilemma",
+  "body": " Generalized Prisoner's Dilemma        Cooperate  Defect    Cooperate      Defect      "
+},
+{
+  "id": "table-sharing-dilemma-eval",
+  "level": "2",
+  "url": "sec-discount-factor-contingent-strategies.html#table-sharing-dilemma-eval",
+  "type": "Table",
+  "number": "3.2.2",
+  "title": "Primitive Hunting Game",
+  "body": " Primitive Hunting Game          Colm      Share  Don't    Rowan  Share  5, 5  -7.5, 7.5     Don't  7.5, -7.5  -5, -5    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
