@@ -793,6 +793,105 @@ var ptx_lunr_docs = [
   "body": " Primitive Hunting Game          Colm      Share  Don't    Rowan  Share  5, 5  -7.5, 7.5     Don't  7.5, -7.5  -5, -5    "
 },
 {
+  "id": "sec-penalty-reward-schemes",
+  "level": "1",
+  "url": "sec-penalty-reward-schemes.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Penalty\/Reward Schemes",
+  "body": " Penalty\/Reward Schemes  So far, we have looked at repetition as a possible solution to Social Dilemmas (SDs). We found that cooperation is sustainable in an indefinitely played SD as long as players are patient enough. Let's now look at another possible solution to SDs.   Penalty\/Reward Schemes  The idea behind creating a penalty\/reward solution to a SD is to alter the payoff structure of the game such that the new Nash equilibrium is the superior Pareto outcome (the cooperative outcome).  A Pareto outcome is any outcome where no player's payoff can be increased without simultaneously reducing another player's payoff. When comparing two potential solutions, an outcome is considered Pareto superior if it leaves at least one player better off without leaving anyone else worse off compared to an alternative, which is deemed Pareto inferior. A shift from a Pareto inferior state to a Pareto superior one is a Pareto improvement .  These schemes generally have to be enforced by a third party, i.e. the third party devises a mechanism to change the payoffs and the players react rationally to the new payoff structure, which leads to the new equilibrium. But that is not always the case.  For example, automobile drivers and pedestrians constantly find themselves at odds with one another. Drivers do not enjoy looking out for pedestrians and neither do pedestrians enjoy looking out for crazy drivers. Thus being careful out on the streets has a cost for pedestrians and drivers. Let's gamify this problem as an SD.  If pedestrians get hit by a car, they get a great amount of disutility (-100), while drivers can basically hit-and-run (0, in this early stage of the game). Pedestrians get hit if at least one of the players is not careful. If both pedestrian and driver are careful (-10 disutility), there is only a 10% chance an accident occurs.   Pedestrian vs. Driver               Do Not Care  Care     Do Not Care       Care       With this payoff structure, the socially optimal outcome, which is ________________, is not a NE. Instead, both drivers and pedestrians will choose to be negligent.  Now suppose the Transportation Authority can devise a system of obligations\/liabilities in case of pedestrian injury that modifies the payoff structure. Let's look at three different schemes and assess their success at ensuring pedestrian safety.  Suppose the Transportation Authority devises a new regulation that creates strict liability for the driver, i.e. regardless of who was negligent (did not take care), the driver is liable in case of an accident.   Strict Liability               Do Not Care  Care     Do Not Care       Care       What is the equilibrium outcome of strict liability? Did it resolve the issue?  Suppose instead that a negligence and contributory negligence scheme is instituted. In this scheme, the driver is held liable if he is negligent (Do Not Care) and the pedestrian is not (Care). If both are negligent, then the pedestrian deals with the damage, and the driver \"hits-and-runs.\"   Negligence and Contributory Negligence          Colm (Driver)      Do Not Care  Care    Rowan (Pedestrian)  Do Not Care  -100, 0  -100, -10     Care  -10, -100  -20, -10     What is the equilibrium outcome of this scheme? Did it resolve the issue?  Finally, let's imagine a strict liability and contributory negligence scheme. In this scheme, the driver is held liable regardless of whether he was negligent or not, unless the pedestrian was negligent.   Strict Liability and Contributory Negligence          Colm (Driver)      Do Not Care  Care    Rowan (Pedestrian)  Do Not Care  -100, 0  -100, -10     Care  -10, -100  -10, -20     What is the equilibrium outcome of this scheme? Did it resolve the issue?  This new equilibrium is better for pedestrian, since in the small chance that he gets run over when both driver and pedestrian were careful, the driver is liable for damages.    Further Thoughts on Punishment\/Reward Schemes  In the Driver\/ Pedestrian Social Dilemma, we found three schemes that changed payoffs, and out of those three, two were satisfactory in getting us to the socially optimal equilibrium. But then we must ask which rule should the Transportation Authority choose? We need to know three things to guide our decision:   Is the outcome a Nash equilibrium, i.e. is it incentive-compatible with the intentions of the Transportation Authority?  Is one of the schemes a dominant strategy solution?  Is one of the schemes more equitable than the other?   In larger SD games, it will be harder to detect who the defectors are in order to inflict punishment. In the Driver\/Pedestrian Game, how does the Transportation Authority enforce any rules when there are thousands of cars on the streets?  In a world of uncertainty, how do enforcers know whether defection was not simply the result of bad luck or a mistake? In the Driver\/Pedestrian Game, how does the Transportation Authority know that the driver didn't lose control of the car or if the pedestrian didn't trip over the curb and got run over subsequently?  One-shot games, like the ones, we looked at just now, do not allow for correction for over-punishment or for delayed penalization.   "
+},
+{
+  "id": "table-pedestrian-driver-base",
+  "level": "2",
+  "url": "sec-penalty-reward-schemes.html#table-pedestrian-driver-base",
+  "type": "Table",
+  "number": "3.3.1",
+  "title": "Pedestrian vs. Driver",
+  "body": " Pedestrian vs. Driver               Do Not Care  Care     Do Not Care       Care      "
+},
+{
+  "id": "table-pedestrian-driver-strict",
+  "level": "2",
+  "url": "sec-penalty-reward-schemes.html#table-pedestrian-driver-strict",
+  "type": "Table",
+  "number": "3.3.2",
+  "title": "Strict Liability",
+  "body": " Strict Liability               Do Not Care  Care     Do Not Care       Care      "
+},
+{
+  "id": "table-pedestrian-driver-negligence",
+  "level": "2",
+  "url": "sec-penalty-reward-schemes.html#table-pedestrian-driver-negligence",
+  "type": "Table",
+  "number": "3.3.3",
+  "title": "Negligence and Contributory Negligence",
+  "body": " Negligence and Contributory Negligence          Colm (Driver)      Do Not Care  Care    Rowan (Pedestrian)  Do Not Care  -100, 0  -100, -10     Care  -10, -100  -20, -10    "
+},
+{
+  "id": "table-pedestrian-driver-strict-contrib",
+  "level": "2",
+  "url": "sec-penalty-reward-schemes.html#table-pedestrian-driver-strict-contrib",
+  "type": "Table",
+  "number": "3.3.4",
+  "title": "Strict Liability and Contributory Negligence",
+  "body": " Strict Liability and Contributory Negligence          Colm (Driver)      Do Not Care  Care    Rowan (Pedestrian)  Do Not Care  -100, 0  -100, -10     Care  -10, -100  -10, -20    "
+},
+{
+  "id": "sec-sustaining-cooperation-sample-questions-1",
+  "level": "1",
+  "url": "sec-sustaining-cooperation-sample-questions-1.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Questions",
+  "body": " Questions    Let's consider Rowan and Colm as housemates facing a repeated \"Chores Dilemma.\" Each day, they must decide whether to contribute effort toward keeping their apartment clean (Cooperate) or shirk their responsibilities to enjoy free time at the other’s expense (Defect).   Chores Dilemma          Colm      Cooperate (Clean)  Defect (Shirk)    Rowan  Cooperate (Clean)  2, 2  -1, 3     Defect (Shirk)  3, -1  0, 0       What is the Nash equilibrium for this game?  ________________________________________    Find their critical discount factors ( ) for grim trigger and tit-for-tat strategies.  ____________________ ____________________    Which of the two contingent strategies requires more patience, i.e. players to value the future more?  ________________________________________      Consider the following pricing game and profit payouts for two firms. The two firms decide whether to charge a low or high price to consumers. Can cooperation (collusion) be sustained?   Pricing Game          Firm 2      LOW  HIGH    Firm 1  LOW  54, 54  72, 47     HIGH  47, 72  60, 60       What is the Nash equilibrium for this game?  ________________________________________    Find their critical discount factors ( ) for grim trigger and tit-for-tat strategies.  ____________________ ____________________    Which of the two contingent strategies requires more patience, i.e. players to value the future more?  ________________________________________    Draw a payoff graph for this game, identify the security level for the players and the payoff regions for which cooperation can be maintained in an indefinitely repeated game.      Dr. Zweistein is deciding whether to invest in developing a revolutionary new microchip. The research and development cost to invent the chip is . If he invents it and maintains a monopoly, he will earn monopolistic profits of . However, once the chip is released, a rival Competitor can easily reverse-engineer and imitate the design. If imitation occurs, both firms compete in the market and earn competitive profits of each. If Dr. Zweistein chooses Do Not Invent , both firms earn . The payoff matrix for this game is shown below:   Microchip Innovation Game          Competitor      Copy  Do Not Copy    Dr. Zweistein  Invent  -300, 200  300, 0     Do Not Invent  0, 0  0, 0       Does Dr. Zweistein have a dominant strategy in this baseline game? Explain briefly.  __________________________________________________    Find the Nash Equilibrium of this game. Does society get the new microchip?  __________________________________________________    To encourage innovation, the government passes a law: If the Competitor chooses to Copy , they must pay a legal penalty of . This entire penalty , along with the Competitor's competitive profit ( ), is transferred directly to Dr. Zweistein as restitution.  Write out Dr. Zweistein's payoff for the strategy profile ( Invent , Copy ) as an algebraic expression in terms of .  __________________________________________________    What is the minimum whole-dollar penalty ( ) the government must set to make Invent a strictly dominant strategy for Dr. Zweistein? Show your inequality.  __________________________________________________    Assuming the government sets , what is the new Nash Equilibrium of the game?  __________________________________________________    Now suppose the government repeals the penalty system. Instead, they decide to offer a public research subsidy of out of tax revenues to any inventor who creates a new technology, while allowing rivals to freely copy the invention without penalty.  What is the minimum whole-dollar reward ( ) the government must offer to make Invent a strictly dominant strategy for Dr. Zweistein? Show your work.  __________________________________________________    Assuming the government sets the reward at this optimal level, what is the resulting Nash Equilibrium? Briefly explain why this outcome might be preferable for consumers compared to the outcome in Solution A.  __________________________________________________      "
+},
+{
+  "id": "table-chores-dilemma-q",
+  "level": "2",
+  "url": "sec-sustaining-cooperation-sample-questions-1.html#table-chores-dilemma-q",
+  "type": "Table",
+  "number": "3.4.1",
+  "title": "Chores Dilemma",
+  "body": " Chores Dilemma          Colm      Cooperate (Clean)  Defect (Shirk)    Rowan  Cooperate (Clean)  2, 2  -1, 3     Defect (Shirk)  3, -1  0, 0    "
+},
+{
+  "id": "table-pricing-game-q",
+  "level": "2",
+  "url": "sec-sustaining-cooperation-sample-questions-1.html#table-pricing-game-q",
+  "type": "Table",
+  "number": "3.4.2",
+  "title": "Pricing Game",
+  "body": " Pricing Game          Firm 2      LOW  HIGH    Firm 1  LOW  54, 54  72, 47     HIGH  47, 72  60, 60    "
+},
+{
+  "id": "table-dr-zweistein-q",
+  "level": "2",
+  "url": "sec-sustaining-cooperation-sample-questions-1.html#table-dr-zweistein-q",
+  "type": "Table",
+  "number": "3.4.3",
+  "title": "Microchip Innovation Game",
+  "body": " Microchip Innovation Game          Competitor      Copy  Do Not Copy    Dr. Zweistein  Invent  -300, 200  300, 0     Do Not Invent  0, 0  0, 0    "
+},
+{
+  "id": "sec-sustaining-cooperation-sample-answers-1",
+  "level": "1",
+  "url": "sec-sustaining-cooperation-sample-answers-1.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "Answers",
+  "body": " Answers       Let's find their critical values of for each trigger strategy (the game is symmetric so we only need to do it once).   Grim:  Tit-for-Tat:    Since Tit-for-Tat requires a lower threshold for cooperation ( ) than the Grim Trigger ( ), it successfully sustains cooperation among housemates who are less concerned about the future. So Grim Trigger requires more patience and a higher discount factor.         Grim:  TfT:    TfT requires more patience ( )    Payoff Graph and Feasible Region for Cooperation           No. If the Competitor plays Copy, Dr. Zweistein's best response is Do Not Invent ( ). If the Competitor plays Do Not Copy , his best response is Invent ( ).  . No, society does not get the microchip due to market failure.  .  . The minimum whole-dollar penalty is .  . With , copying yields a negative payoff ( ) for the Competitor, so imitation is deterred.  . The minimum whole-dollar reward is .  . Unlike Solution A, which creates a monopoly, this outcome fosters a competitive market where consumers benefit from lower prices and higher output.     "
+},
+{
+  "id": "fig-pricing-game-graph",
+  "level": "2",
+  "url": "sec-sustaining-cooperation-sample-answers-1.html#fig-pricing-game-graph",
+  "type": "Figure",
+  "number": "3.5.1",
+  "title": "",
+  "body": " Payoff Graph and Feasible Region for Cooperation     "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
