@@ -898,7 +898,16 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " This book was authored in PreTeXt .  "
+  "body": " This book was authored in PreTeXt .   The Game of Nim: Try to beat the computer!    "
+},
+{
+  "id": "interactive-nim-game",
+  "level": "2",
+  "url": "backmatter-2.html#interactive-nim-game",
+  "type": "Figure",
+  "number": "0.0.1",
+  "title": "",
+  "body": " The Game of Nim: Try to beat the computer!   "
 }
 ]
 
