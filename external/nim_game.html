@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Nim</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .heap {
+            margin: 15px auto;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            max-width: 400px;
+            border: 1px solid #ddd;
+        }
+        .token {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #CFB87C; /* UCCS Gold */
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .token:hover {
+            background: #b09a60;
+        }
+        .token.selected {
+            background: #000000; /* UCCS Black */
+        }
+        .disabled .token {
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        #status {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>The Game of Nim</h2>
+    <p><strong>Rules:</strong> Players take turns removing any number of tokens from a <em>single</em> row. The player who takes the last token wins!</p>
+    <p id="status">Your turn! Click tokens to select them, then click Submit.</p>
+    
+    <div id="game-board"></div>
+    
+    <button id="submit-btn" onclick="submitMove()" disabled>Submit Move</button>
+    <button onclick="resetGame()" style="background-color: #CFB87C; color: #000;">Reset Game</button>
+
+    <script>
+        // Initial setup: 3 heaps of sizes 3, 4, and 5
+        const initialHeaps = [3, 4, 5];
+        let heaps = [...initialHeaps];
+        let selectedRow = null;
+        let selectedTokens = 0;
+
+        const board = document.getElementById('game-board');
+        const statusText = document.getElementById('status');
+        const submitBtn = document.getElementById('submit-btn');
+
+        function renderBoard() {
+            board.innerHTML = '';
+            for (let i = 0; i < heaps.length; i++) {
+                let heapDiv = document.createElement('div');
+                heapDiv.className = 'heap';
+                heapDiv.id = 'heap-' + i;
+                
+                // Add tokens to the row
+                for (let j = 0; j < heaps[i]; j++) {
+                    let token = document.createElement('div');
+                    token.className = 'token';
+                    token.onclick = () => toggleToken(i, token);
+                    heapDiv.appendChild(token);
+                }
+                board.appendChild(heapDiv);
+            }
+        }
+
+        function toggleToken(row, tokenElement) {
+            // Prevent selecting from multiple rows
+            if (selectedRow !== null && selectedRow !== row) {
+                alert("You can only take tokens from one row at a time!");
+                return;
+            }
+
+            if (tokenElement.classList.contains('selected')) {
+                tokenElement.classList.remove('selected');
+                selectedTokens--;
+                if (selectedTokens === 0) selectedRow = null;
+            } else {
+                tokenElement.classList.add('selected');
+                selectedRow = row;
+                selectedTokens++;
+            }
+
+            submitBtn.disabled = (selectedTokens === 0);
+        }
+
+        function submitMove() {
+            if (selectedTokens === 0) return;
+            
+            // Apply player's move
+            heaps[selectedRow] -= selectedTokens;
+            selectedRow = null;
+            selectedTokens = 0;
+            submitBtn.disabled = true;
+            renderBoard();
+
+            if (checkWin("You")) return;
+
+            // Computer's turn
+            statusText.innerText = "Computer is thinking...";
+            board.classList.add('disabled'); // lock board
+            
+            setTimeout(() => {
+                makeComputerMove();
+                renderBoard();
+                board.classList.remove('disabled');
+                if (!checkWin("Computer")) {
+                    statusText.innerText = "Your turn! Click tokens to select them, then click Submit.";
+                }
+            }, 1000); // 1 second delay for realism
+        }
+
+        function makeComputerMove() {
+            // Game Theory Logic: Calculate the Nim-sum (XOR)
+            let nimSum = heaps.reduce((a, b) => a ^ b, 0);
+            
+            if (nimSum !== 0) {
+                // Winning position: make a move to leave a Nim-sum of 0
+                for (let i = 0; i < heaps.length; i++) {
+                    let targetSize = heaps[i] ^ nimSum;
+                    if (targetSize < heaps[i]) {
+                        heaps[i] = targetSize;
+                        return;
+                    }
+                }
+            } else {
+                // Losing position: just take 1 token from the first available row
+                for (let i = 0; i < heaps.length; i++) {
+                    if (heaps[i] > 0) {
+                        heaps[i] -= 1;
+                        return;
+                    }
+                }
+            }
+        }
+
+        function checkWin(player) {
+            let totalRemaining = heaps.reduce((a, b) => a + b, 0);
+            if (totalRemaining === 0) {
+                statusText.innerText = player + " won the game!";
+                board.classList.add('disabled');
+                return true;
+            }
+            return false;
+        }
+
+        function resetGame() {
+            heaps = [...initialHeaps];
+            selectedRow = null;
+            selectedTokens = 0;
+            submitBtn.disabled = true;
+            board.classList.remove('disabled');
+            statusText.innerText = "Your turn! Click tokens to select them, then click Submit.";
+            renderBoard();
+        }
+
+        // Initialize game on load
+        renderBoard();
+    </script>
+</body>
+</html>
