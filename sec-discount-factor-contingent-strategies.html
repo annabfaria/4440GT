@@ -229,6 +229,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active" id="ptx-toc-group-sec-discount-factor-contingent-strategies">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-discount-factor-contingent-strategies.html#subsec-discount-factor" class="internal"><span class="codenumber">3.2.1</span> <span class="title">The Discount Factor</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-discount-factor-contingent-strategies.html#subsec-contingent-strategies" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Contingent Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-discount-factor-contingent-strategies.html#subsec-benefits-tft" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Benefits of Tit-for-Tat</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -249,53 +250,19 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Discount Factor and Contingent Strategies</span>
 </h1>
+<div class="para" id="sec-discount-factor-contingent-strategies-2">Cooperation is possible as long as players value the future at least somewhat and expect play to continue.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-discount-factor-contingent-strategies-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <section class="subsection" id="subsec-discount-factor">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Discount Factor</span>
 </h2>
-<div class="para" id="subsec-discount-factor-2">Cooperation is possible as long as players value the future at least somewhat and expect play to continue. To measure a player’s patience level, we use the discount factor <span class="process-math">\(\delta\)</span> (delta), which is the factor by which players discount future payoffs. In other words, what is the present value of a payoff received in the future? How much do we value, in today’s terms, the utility or reward received in some future period?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-discount-factor-2">To measure a player’s patience level, we use the discount factor <span class="process-math">\(\delta\)</span> (delta), which is the factor by which players discount future payoffs. In other words, what is the present value of a payoff received in the future? How much do we value, in today’s terms, the utility or reward received in some future period?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-discount-factor-3">We know that:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-discount-factor-3">The discount factor <span class="process-math">\(\delta\)</span> is a function of the probability of future play (<span class="process-math">\(p\)</span>) and the interest rate (<span class="process-math">\(r\)</span>), such that <span class="process-math">\(\delta = f(p,r) = p \cdot \frac{1}{1+r}\text{,}\)</span> where <span class="process-math">\(0 \leq \delta \leq 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ul class="disc" id="subsec-discount-factor-4">
-<li id="subsec-discount-factor-4-1">
-<div class="para" id="subsec-discount-factor-4-1-1">
-<span class="process-math">\(0 \leq \delta \leq 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-discount-factor-4">The higher the probability of continued play (higher <span class="process-math">\(\uparrow p\)</span>), the higher the discount factor (<span class="process-math">\(\uparrow \delta\)</span>). The higher the interest rate (<span class="process-math">\(\uparrow r\)</span>), the lower the patience level (<span class="process-math">\(\downarrow \delta\)</span>). In other words, the higher the interest rate, the more heavily you discount the value of the future, all else being equal. This implies that a player requires a larger premium for waiting for future payoffs. If <span class="process-math">\(r=10\%\text{,}\)</span> then I require an extra dime in period 2 for every dollar postponed from period 1. If <span class="process-math">\(r=5\%\text{,}\)</span> then I require only a nickel.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-discount-factor-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="subsec-discount-factor-4-2">
-<div class="para" id="subsec-discount-factor-4-2-1">
-<span class="process-math">\(\delta \rightarrow 1 \Rightarrow \$1\)</span> tomorrow <span class="process-math">\(\rightarrow \$1\)</span> today.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-discount-factor-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="subsec-discount-factor-4-3">
-<div class="para" id="subsec-discount-factor-4-3-1">
-<span class="process-math">\(\delta = 0.5 \Rightarrow \$1\)</span> tomorrow <span class="process-math">\(\rightarrow \$0.50\)</span> today.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-discount-factor-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="subsec-discount-factor-4-4">
-<div class="para" id="subsec-discount-factor-4-4-1">
-<span class="process-math">\(\delta \rightarrow 0 \Rightarrow \$1\)</span> tomorrow <span class="process-math">\(\rightarrow \$0\)</span> today, i.e., the future has little value today.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-discount-factor-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="subsec-discount-factor-4-5">
-<div class="para" id="subsec-discount-factor-4-5-1">A low <span class="process-math">\(\delta\)</span> implies little incentive to cooperate because future payoffs receive little weight in a player’s intertemporal payoff maximization.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-4-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-discount-factor-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para" id="subsec-discount-factor-5">The discount factor <span class="process-math">\(\delta\)</span> is a function of the probability of future play (<span class="process-math">\(p\)</span>) and the interest rate (<span class="process-math">\(r\)</span>).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="subsec-discount-factor-6">
-\begin{equation*}
-\delta = f(p,r) = p \cdot \frac{1}{1+r}
-\end{equation*}
-</div>
-<div class="para" id="subsec-discount-factor-7">The higher the probability of continued play (higher <span class="process-math">\(\uparrow p\)</span>), the higher the discount factor (<span class="process-math">\(\uparrow \delta\)</span>). The higher the interest rate (<span class="process-math">\(\uparrow r\)</span>), the lower the patience level (<span class="process-math">\(\downarrow \delta\)</span>). A higher interest rate implies that a player requires a larger premium for waiting for future payoffs. If <span class="process-math">\(r=10\%\text{,}\)</span> then I require an extra dime in period 2 for every dollar postponed from period 1. If <span class="process-math">\(r=5\%\text{,}\)</span> then I require only a nickel.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-discount-factor-5">A low <span class="process-math">\(\delta\)</span> implies little incentive to cooperate because future payoffs receive little weight. When <span class="process-math">\(\delta \rightarrow 0 \Rightarrow \$1\)</span> tomorrow <span class="process-math">\(\rightarrow \$0\)</span> today, i.e., the future has little value today. When <span class="process-math">\(\delta \rightarrow 1 \Rightarrow \$1\)</span> tomorrow <span class="process-math">\(\rightarrow \$1\)</span> today, meaning the player values the future as much as the present.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-discount-factor-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.1: The Discount Factor"><a tabindex="-1" href="#subsec-discount-factor" title="Copy heading and permalink for Subsection 3.2.1: The Discount Factor" aria-label="Copy heading and permalink for Subsection 3.2.1: The Discount Factor">🔗</a></div>
 </section>
@@ -303,9 +270,9 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Contingent Strategies</span>
 </h2>
-<div class="para" id="subsec-contingent-strategies-2">In indefinitely repeated games, players use contingent strategies to induce cooperation. By making today’s cooperation conditional upon the other player’s history, these strategies create a credible mechanism for accountability. We focus on trigger strategies and their two most common forms: Grim and Tit-for-Tat.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-2">In indefinitely repeated games, players use contingent strategies to induce cooperation: players will have complete plans of actions against anything another play might do. We will focus on a subset of contingent strategies called trigger strategies.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-contingent-strategies-3">A trigger strategy is a contingent strategy in which non-cooperation by one player leads to punishment by the other player through defection. Trigger strategies are often used because the threat of a specific, lasting reaction serves as the primary enforcement for maintaining trust. The two main trigger strategies are:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-3">A trigger strategy is a contingent strategy in which non-cooperation by one player leads to punishment by the other player through defection. Trigger strategies are often used because the threat of a specific, lasting reaction serves as the primary enforcement for maintaining trust. By making today’s cooperation conditional upon the other player’s history, these strategies create a credible mechanism for accountability. The two main trigger strategies are:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ul class="disc" id="subsec-contingent-strategies-4">
 <li id="subsec-contingent-strategies-4-1">
@@ -314,99 +281,83 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-contingent-strategies-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-contingent-strategies-4-2">
-<div class="para" id="subsec-contingent-strategies-4-2-1">Tit-for-Tat: Defect once after the other player defects once, or choose in period <span class="process-math">\(t\)</span> the action the other player chose in period <span class="process-math">\(t-1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-4-2-1">Tit-for-Tat (TFT): Defect once after the other player defects once, or choose in period <span class="process-math">\(t\)</span> the action the other player chose in period <span class="process-math">\(t-1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-contingent-strategies-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para" id="subsec-contingent-strategies-5">In order to ensure cooperation, we want to find the critical value of <span class="process-math">\(\delta\)</span> (<span class="process-math">\(\delta^*\)</span>) that guarantees cooperation yields higher payoffs than defection. Consider the generalized Prisoner’s Dilemma payoff matrix, where <span class="process-math">\(H \gt C \gt D \gt L\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-5">In order to ensure cooperation, we want to find the critical value of <span class="process-math">\(\delta\)</span> (<span class="process-math">\(\delta^*\)</span>) that guarantees cooperation yields higher payoffs than defecting when playing against each contingent strategy. We call this the best response deviation principle: a player unilaterally changes their strategy to the specific action that yields the highest possible payoff given the choices made by their opponent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="table-generalized-pd"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Generalized Prisoner’s Dilemma<div class="autopermalink" aria-hidden="true" data-description="Table 3.2.1: Generalized Prisoner’s Dilemma"><a tabindex="-1" href="#table-generalized-pd" title="Copy heading and permalink for Table 3.2.1: Generalized Prisoner’s Dilemma" aria-label="Copy heading and permalink for Table 3.2.1: Generalized Prisoner’s Dilemma">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="c m b1 r0 l0 t0 lines">Cooperate</td>
-<td class="c m b1 r0 l0 t0 lines">Defect</td>
-</tr>
-<tr>
-<td class="l m b0 r1 l0 t0 lines">Cooperate</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(C, C\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(L, H\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r1 l0 t0 lines">Defect</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(H, L\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(D, D\)</span></td>
-</tr>
-</table></div>
-</figure>
-<div class="para" id="subsec-contingent-strategies-7">The Prisoners’ Dilemma is a type of Social Dilemma (SD), or Social Coordination Problem. A SD is a game in which Defect is a dominant strategy [condition 1] and the outcome (Defect, Defect) yields lower payoffs than (Cooperate, Cooperate) [condition 2].<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-6">Let’s consider Rowan and Colm’s Primitive Hunting Game. If the hunters were only in the woods for a single day, they would not choose to share, as defecting yields a higher immediate payoff. But if there is a chance they will continue to hunt together indefinitely, we can determine the critical discount factor, <span class="process-math">\(\delta^*\text{,}\)</span> that guarantees cooperation. To find this threshold, we must compare the payoff of cooperating forever against the payoff of defecting once and triggering a punishment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-contingent-strategies-8">To solve for <span class="process-math">\(\delta^*\text{,}\)</span> we use the infinite geometric series formula:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-7">To evaluate an infinite stream of future payoffs, we use the formula for an infinite geometric series. The sum of any constant payoff received in every period, discounted by <span class="process-math">\(\delta\text{,}\)</span> is mathematically expressed as<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="subsec-contingent-strategies-9">
+<div class="displaymath process-math" id="subsec-contingent-strategies-8">
 \begin{equation*}
-\sum_{t=0}^{\infty} \text{Payoff} \cdot \delta^t = \frac{\text{Payoff}}{1-\delta}
+\sum_{t=0}^{\infty} \text{Payoff} \cdot \delta^t=\frac{\text{Payoff}}{1-\delta}
 \end{equation*}
 </div>
-<div class="para" id="subsec-contingent-strategies-10">For the Grim trigger, we compare cooperating forever to defecting once and being punished forever:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-9">We will use this to calculate the long-term value for Rowan of defecting on both the Grim Trigger and Tit-for-Tat strategies. We utilize her specific payoffs from the matrix: a cooperation payoff of <span class="process-math">\(5\text{,}\)</span> a temptation payoff of <span class="process-math">\(7.5\text{,}\)</span> a mutual defection punishment of <span class="process-math">\(-5\text{,}\)</span> and a sucker payoff of <span class="process-math">\(-7.5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="subsec-contingent-strategies-11">
-\begin{equation*}
-\frac{C}{1-\delta} \geq H + \frac{D\delta}{1-\delta} \implies \delta^* \geq \frac{H-C}{H-D}
-\end{equation*}
+<div class="para" id="subsec-contingent-strategies-10">If Rowan cooperates forever against a nice strategy, one that begins by cooperating, her expected payoff is a continuous stream of <span class="process-math">\(5\)</span>s, written as <span class="process-math">\(5 + 5\delta + 5\delta^2 + 5\delta^3 + \dots\text{,}\)</span> which simplifies to <span class="process-math">\(\frac{5}{1-\delta}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-contingent-strategies-12">For Tit-for-Tat, we compare cooperating forever to defecting once (getting <span class="process-math">\(H\)</span>), being punished once (getting <span class="process-math">\(L\)</span>), and then returning to cooperation:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-11">Defecting Always Against Grim: If Rowan defects, she receives the immediate temptation payoff of <span class="process-math">\(7.5\text{,}\)</span> but triggers permanent mutual defection. Her payoff stream becomes <span class="process-math">\(7.5 - 5\delta - 5\delta^2 - 5\delta^3 - \dots\text{.}\)</span> The infinite stream of <span class="process-math">\(-5\)</span>s starting in the next period simplifies to <span class="process-math">\(\frac{-5\delta}{1-\delta}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-contingent-strategies-12">Therefore she’ll cooperate against a grim strategy as long as:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="subsec-contingent-strategies-13">
 \begin{equation*}
-\frac{C}{1-\delta} \geq H + L\delta + \frac{C\delta^2}{1-\delta} \implies \delta^* \geq \frac{H-C}{H-L}
+\frac{5}{1-\delta} \geq 7.5 - \frac{5\delta}{1-\delta} \implies \delta^* \geq 0.2
 \end{equation*}
 </div>
-<div class="para" id="subsec-contingent-strategies-14">Let’s consider Rowan and Colm’s Primitive Hunting Game. If the hunters were only in the woods for a single day, would they choose to share? But is there a chance they’ll share their catch as long as they continue to hunt together?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-14">Defecting Once (then Cooperating Always) Against TFT: If Rowan defects, she receives the temptation payoff of <span class="process-math">\(7.5\)</span> today. Tomorrow, Colm will retaliate by defecting, so if Rowan wants to restore cooperation, she must play <em class="emphasis">Share</em> while Colm plays Don’t, resulting in the "sucker" payoff of <span class="process-math">\(-7.5\)</span> for that single period (and begin discounting its worth to Rowan). From the third period onward, mutual cooperation resumes, yielding the payoff stream <span class="process-math">\(7.5 - 7.5\delta + 5\delta^2 + 5\delta^3 + \dots\text{,}\)</span> which simplifies to <span class="process-math">\(\frac{5\delta^2}{1-\delta}\text{.}\)</span><details class="ptx-footnote" aria-live="polite" id="subsec-contingent-strategies-14-7"><summary class="ptx-footnote__number" title="Footnote 3.2.1"><sup> 1 </sup></summary>
+<div class="ptx-footnote__contents" id="subsec-contingent-strategies-14-7">We apply our geometric series formula to the infinite tail of <span class="process-math">\(5\)</span>s starting in the third period, we factor out the common delay (<span class="process-math">\(\delta^2\)</span>) to get <span class="process-math">\(\delta^2(5 + 5\delta + 5\delta^2 + \dots)\text{.}\)</span>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="table-sharing-dilemma-eval"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Primitive Hunting Game<div class="autopermalink" aria-hidden="true" data-description="Table 3.2.2: Primitive Hunting Game"><a tabindex="-1" href="#table-sharing-dilemma-eval" title="Copy heading and permalink for Table 3.2.2: Primitive Hunting Game" aria-label="Copy heading and permalink for Table 3.2.2: Primitive Hunting Game">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r0 l0 t0 lines" colspan="2">Colm</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r1 l0 t0 lines"></td>
-<td class="c m b1 r1 l0 t0 lines">Share</td>
-<td class="c m b1 r1 l0 t0 lines">Don’t</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Rowan</td>
-<td class="c m b0 r1 l0 t0 lines">Share</td>
-<td class="c m b1 r1 l0 t0 lines">5, 5</td>
-<td class="c m b1 r1 l0 t0 lines">-7.5, 7.5</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="c m b0 r1 l0 t0 lines">Don’t</td>
-<td class="c m b1 r1 l0 t0 lines">7.5, -7.5</td>
-<td class="c m b1 r1 l0 t0 lines">-5, -5</td>
-</tr>
-</table></div>
-</figure>
-<div class="para" id="subsec-contingent-strategies-16">Let’s find their critical values of <span class="process-math">\(\delta\)</span> for each trigger strategy (the game is symmetric, so we only need to do it once).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-15">Setting cooperation greater than or equal to this complete defection path gives:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ul class="disc" id="subsec-contingent-strategies-17">
-<li id="subsec-contingent-strategies-17-1">
-<div class="para" id="subsec-contingent-strategies-17-1-1">Grim: <span class="process-math">\(\delta^* \geq \frac{D-C}{D-P} = \frac{7.5-5}{7.5-(-5)} = \frac{2.5}{12.5} = 0.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math" id="subsec-contingent-strategies-16">
+\begin{equation*}
+\frac{5}{1-\delta} \geq 7.5 - 7.5\delta + \frac{5\delta^2}{1-\delta} \implies \delta^* \geq 0.2
+\end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-contingent-strategies-17-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="subsec-contingent-strategies-17-2">
-<div class="para" id="subsec-contingent-strategies-17-2-1">Tit-for-Tat: <span class="process-math">\(\delta^* \geq \frac{D-C}{D-L} = \frac{7.5-5}{7.5-(-7.5)} = \frac{2.5}{15} \approx 0.167\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-contingent-strategies-17-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para" id="subsec-contingent-strategies-18">Since Tit-for-Tat requires a lower threshold for cooperation (<span class="process-math">\(\delta \geq 0.167\)</span>) than the Grim Trigger (<span class="process-math">\(\delta \geq 0.2\)</span>), it successfully sustains cooperation among hunters who are less concerned about the future. Sometimes, a flexible reaction is more effective than a permanent grudge.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-contingent-strategies-17">In this version of the Primitive Hunting Game, as long as Rowan values the future at <span class="process-math">\(\delta^* \geq 0.2\text{,}\)</span> cooperation will be sustainable if Colm is playing a Tit-for-Tat or a Grim strategy.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-contingent-strategies-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.2: Contingent Strategies"><a tabindex="-1" href="#subsec-contingent-strategies" title="Copy heading and permalink for Subsection 3.2.2: Contingent Strategies" aria-label="Copy heading and permalink for Subsection 3.2.2: Contingent Strategies">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-benefits-tft">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Benefits of Tit-for-Tat</span>
+</h2>
+<div class="para" id="subsec-benefits-tft-2">Yet, the evidence suggests TFT is a "winner" in sustaining cooperation. Robert Axelrod identified in the book Evolution of Cooperation four specific characteristics that made Tit-for-Tat the winning strategy in his famous computer Prisoner’s Dilemma tournaments:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-benefits-tft-3">
+<li id="subsec-benefits-tft-3-1">
+<div class="para" id="subsec-benefits-tft-3-1-1">Nice: It never defects first.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-benefits-tft-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-benefits-tft-3-2">
+<div class="para" id="subsec-benefits-tft-3-2-1">Provocable: It punishes defection immediately.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-benefits-tft-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-benefits-tft-3-3">
+<div class="para" id="subsec-benefits-tft-3-3-1">Forgiving: It returns to cooperation as soon as the other player does. Grim does not forgive and mutual cooperation cannot be restored.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#subsec-benefits-tft-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsec-benefits-tft-3-4">
+<div class="para" id="subsec-benefits-tft-3-4-1">Clear: It is easy for the opponent to understand and adapt to.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#subsec-benefits-tft-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="subsec-benefits-tft-4">A downside of TFT is that an inadvertent defection with a grim response or another TFT player triggers eternal mutual defection (or a back and forth of cooperation and defection), whereas a more forgiving Tit-for-Two-Tats allows players to recover and rebuild trust.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-benefits-tft-5">Still, in Axelrod’s indefinitely repeated PD tournaments, TFT won the majority and ranked high against other strategies even when it didn’t win. Moreover, he found that small clusters of TFT players tended to be evolutionarily successful and to eventually take over a population of players.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-benefits-tft-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 3.2.3: The Benefits of Tit-for-Tat"><a tabindex="-1" href="#subsec-benefits-tft" title="Copy heading and permalink for Subsection 3.2.3: The Benefits of Tit-for-Tat" aria-label="Copy heading and permalink for Subsection 3.2.3: The Benefits of Tit-for-Tat">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 3.2: The Discount Factor and Contingent Strategies"><a tabindex="-1" href="#sec-discount-factor-contingent-strategies" title="Copy heading and permalink for Section 3.2: The Discount Factor and Contingent Strategies" aria-label="Copy heading and permalink for Section 3.2: The Discount Factor and Contingent Strategies">🔗</a></div>
 </section>
 </div>
