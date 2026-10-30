@@ -811,11 +811,29 @@ var ptx_lunr_docs = [
   "body": " Strict Liability and Contributory Negligence Scheme          Colm (Driver)      Do Not Care  Care    Rowan  Do Not Care  -100, 0  -100, -10    (Pedestrian)  Care  -10, -100  -10, -20    "
 },
 {
+  "id": "sec-teaching-cooperation",
+  "level": "1",
+  "url": "sec-teaching-cooperation.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Teaching Cooperation",
+  "body": " Teaching Cooperation  So far we've looked at contingent strategies and mechanism design. Now let's look at a less technical but no less important tool to sustain cooperation: teaching cooperation.  According to Robert Axelrod in The Evolution of Cooperation , there are two main mechanisms when teaching cooperation.   Teaching to Care for Others  First, we may teach people to care for others. This changes their preferences (utility function) to account for others' well-being. This indirectly changes the payoff structure and make cooperation self-enforcing.  Here, the state may have a role in teaching cooperation through public, civic or patriotic education. Elsewhere, the family and community also play a role. Children are naturally predisposed to not share and to be impatient (think marshmallow experiment), but also to be (or want to be) social.  Children who are taught to cooperate appear to be less likely to commit crimes later in life (Heckman, Pinto and Savelyev 2013).  Teaching individuals to be other-loving is however not enough in the presence of very strong economic incentives. Players may know that caring for others is morally correct, but will still be tempted to defect when the rewards are sufficiently large. Moreover, unconditional cooperation leaves well-intentioned individuals vulnerable to exploitation.    Teaching Reciprocity  This brings us to Axelrod's second mechanism: teaching reciprocity. Rather than cooperating unconditionally, individuals learn to cooperate with those who cooperate and respond to those who exploit them.  When people expect others to behave reciprocally, they have stronger incentives to cooperate in the first place. If an individual believes that others will react predictably and in a reciprocal manner in response to their actions, that individual will hesitate to exploit.  Tit-for-tat is a successful strategy evolutionary exactly because it is nice at first, it is provocable (won't be exploited) and, importantly, it is forgiving. Tit-for-tat players thrive in an environment with other TFTers. So much so that they tend to weed out non-cooperative strategies.  Moreover, reciprocity pays off even if players do not expect to encounter each other frequently, as long as enough players in that environment also know and value reciprocity. As reciprocal behavior spreads, persistent defection becomes less profitable.    Trust and Economic Growth  Empirically, we find that in societies with high levels of generalized trust, individuals are more willing to engage in transactions with strangers because they expect others to honor agreements. This reduces the need for costly monitoring, enforcement, and elaborate contracts, facilitating trade and investment.  Knack and Keefer (1997) found that countries with higher levels of civic cooperation tend to also have higher levels of interpersonal trust, and in turn experience stronger economic growth (see figure below). Tabellini (2010) similarly linked cultural values, including trust and respect for others, to regional economic development in Europe.  Acemoglu, Johnson, and Robinson (2001) found that institutions protecting property rights and limiting expropriation fostered economic development in former European colonies. Their findings are consistent with the idea that inclusive institutions sustain cooperation by reducing opportunistic behavior and making investment and exchange more attractive. Cooperation pays off.   Relationship Between Civic Cooperation, Trust, and Economic Growth     "
+},
+{
+  "id": "fig-trust-and-growth",
+  "level": "2",
+  "url": "sec-teaching-cooperation.html#fig-trust-and-growth",
+  "type": "Figure",
+  "number": "3.4.1",
+  "title": "",
+  "body": " Relationship Between Civic Cooperation, Trust, and Economic Growth   "
+},
+{
   "id": "sec-sustaining-cooperation-sample-questions-1",
   "level": "1",
   "url": "sec-sustaining-cooperation-sample-questions-1.html",
   "type": "Section",
-  "number": "3.4",
+  "number": "3.5",
   "title": "Questions",
   "body": " Questions    Let's consider Rowan and Colm as housemates facing a repeated \"Chores Dilemma.\" Each day, they must decide whether to contribute effort toward keeping their apartment clean (Cooperate) or shirk their responsibilities to enjoy free time at the other’s expense (Defect).   Chores Dilemma          Colm      Cooperate (Clean)  Defect (Shirk)    Rowan  Cooperate (Clean)  2, 2  -1, 3     Defect (Shirk)  3, -1  0, 0       What is the Nash equilibrium for this game?  ________________________________________    Find their critical discount factors ( ) for grim trigger and tit-for-tat strategies.  ____________________ ____________________    Which of the two contingent strategies requires more patience, i.e. players to value the future more?  ________________________________________      Consider the following pricing game and profit payouts for two firms. The two firms decide whether to charge a low or high price to consumers. Can cooperation (collusion) be sustained?   Pricing Game          Firm 2      LOW  HIGH    Firm 1  LOW  54, 54  72, 47     HIGH  47, 72  60, 60       What is the Nash equilibrium for this game?  ________________________________________    Find their critical discount factors ( ) for grim trigger and tit-for-tat strategies.  ____________________ ____________________    Which of the two contingent strategies requires more patience, i.e. players to value the future more?  ________________________________________    Draw a payoff graph for this game, identify the security level for the players and the payoff regions for which cooperation can be maintained in an indefinitely repeated game.      Dr. Zweistein is deciding whether to invest in developing a revolutionary new microchip. The research and development cost to invent the chip is . If he invents it and maintains a monopoly, he will earn monopolistic profits of . However, once the chip is released, a rival Competitor can easily reverse-engineer and imitate the design. If imitation occurs, both firms compete in the market and earn competitive profits of each. If Dr. Zweistein chooses Do Not Invent , both firms earn . The payoff matrix for this game is shown below:   Microchip Innovation Game          Competitor      Copy  Do Not Copy    Dr. Zweistein  Invent  -300, 200  300, 0     Do Not Invent  0, 0  0, 0       Does Dr. Zweistein have a dominant strategy in this baseline game? Explain briefly.  __________________________________________________    Find the Nash Equilibrium of this game. Does society get the new microchip?  __________________________________________________    To encourage innovation, the government passes a law: If the Competitor chooses to Copy , they must pay a legal penalty of . This entire penalty , along with the Competitor's competitive profit ( ), is transferred directly to Dr. Zweistein as restitution.  Write out Dr. Zweistein's payoff for the strategy profile ( Invent , Copy ) as an algebraic expression in terms of .  __________________________________________________    What is the minimum whole-dollar penalty ( ) the government must set to make Invent a strictly dominant strategy for Dr. Zweistein? Show your inequality.  __________________________________________________    Assuming the government sets , what is the new Nash Equilibrium of the game?  __________________________________________________    Now suppose the government repeals the penalty system. Instead, they decide to offer a public research subsidy of out of tax revenues to any inventor who creates a new technology, while allowing rivals to freely copy the invention without penalty.  What is the minimum whole-dollar reward ( ) the government must offer to make Invent a strictly dominant strategy for Dr. Zweistein? Show your work.  __________________________________________________    Assuming the government sets the reward at this optimal level, what is the resulting Nash Equilibrium? Briefly explain why this outcome might be preferable for consumers compared to the outcome in Solution A.  __________________________________________________      "
 },
@@ -824,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sustaining-cooperation-sample-questions-1.html#table-chores-dilemma-q",
   "type": "Table",
-  "number": "3.4.1",
+  "number": "3.5.1",
   "title": "Chores Dilemma",
   "body": " Chores Dilemma          Colm      Cooperate (Clean)  Defect (Shirk)    Rowan  Cooperate (Clean)  2, 2  -1, 3     Defect (Shirk)  3, -1  0, 0    "
 },
@@ -833,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sustaining-cooperation-sample-questions-1.html#table-pricing-game-q",
   "type": "Table",
-  "number": "3.4.2",
+  "number": "3.5.2",
   "title": "Pricing Game",
   "body": " Pricing Game          Firm 2      LOW  HIGH    Firm 1  LOW  54, 54  72, 47     HIGH  47, 72  60, 60    "
 },
@@ -842,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sustaining-cooperation-sample-questions-1.html#table-dr-zweistein-q",
   "type": "Table",
-  "number": "3.4.3",
+  "number": "3.5.3",
   "title": "Microchip Innovation Game",
   "body": " Microchip Innovation Game          Competitor      Copy  Do Not Copy    Dr. Zweistein  Invent  -300, 200  300, 0     Do Not Invent  0, 0  0, 0    "
 },
@@ -851,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-sustaining-cooperation-sample-answers-1.html",
   "type": "Section",
-  "number": "3.5",
+  "number": "3.6",
   "title": "Answers",
   "body": " Answers       Let's find their critical values of for each trigger strategy (the game is symmetric so we only need to do it once).   Grim:  Tit-for-Tat:    Since Tit-for-Tat requires a lower threshold for cooperation ( ) than the Grim Trigger ( ), it successfully sustains cooperation among housemates who are less concerned about the future. So Grim Trigger requires more patience and a higher discount factor.         Grim:  TfT:    TfT requires more patience ( )    Payoff Graph and Feasible Region for Cooperation           No. If the Competitor plays Copy, Dr. Zweistein's best response is Do Not Invent ( ). If the Competitor plays Do Not Copy , his best response is Invent ( ).  . No, society does not get the microchip due to market failure.  .  . The minimum whole-dollar penalty is .  . With , copying yields a negative payoff ( ) for the Competitor, so imitation is deterred.  . The minimum whole-dollar reward is .  . Unlike Solution A, which creates a monopoly, this outcome fosters a competitive market where consumers benefit from lower prices and higher output.     "
 },
@@ -860,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-sustaining-cooperation-sample-answers-1.html#fig-pricing-game-graph",
   "type": "Figure",
-  "number": "3.5.1",
+  "number": "3.6.1",
   "title": "",
   "body": " Payoff Graph and Feasible Region for Cooperation     "
 },
