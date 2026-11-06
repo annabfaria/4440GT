@@ -964,6 +964,78 @@ var ptx_lunr_docs = [
   "body": "         Competitor      Copy  Do Not Copy    Dr. Zweistein  Invent  , 200  , 0     Do Not Invent  0, 0  0, 0    "
 },
 {
+  "id": "sec-collective-action-problems",
+  "level": "1",
+  "url": "sec-collective-action-problems.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Collective Action Problems",
+  "body": " Collective Action Problems  So far we've relied on the definition of a social dilemma as one in which the mutual defection outcome arises from independent rational individual choice and that outcome is inferior to a mutually cooperative one. We now apply the concept of social dilemmas or coordination problems to common \"economic problems,\" such as public goods, externalities, and common goods. These are a subset of a broader category of market failures. Market failures represent deviations from the perfectly competitive market model that arise from a violation from one of the model's assumptions. Here, we will always \"violate\" the assumption that private property rights are perfectly defined and well-enforced.  To study these market failures, we need to introduce a narrower framework of coordination problems called collective action problems. One such a problem occurs when the cooperative outcome is optimal for society, i.e., it yield highest social (added) payoffs but individual interests prevent that outcome from being reached. Rational individual choice leads to a lower social payoff equilibrium.  We will lay out a game theoretical model of public goods, externalities and common goods using the framework of collective action problems.  "
+},
+{
+  "id": "sec-excludability-and-rivalry",
+  "level": "1",
+  "url": "sec-excludability-and-rivalry.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Excludability and Rivalry",
+  "body": " Excludability and Rivalry  Economic goods can be characterized by their excludability and rivalry . These two characteristics determine whether markets will work well to allocate them as well as whether there are incentive issues in production and consumption. The table below outlines the categorizations of goods based on excludability and rivalry.   Categorization of Economic Goods        Excludable  Non-Excludable    Rival   Private Goods  e.g. apples, textbooks    Common-Pool Resources  e.g. fisheries, forests     Non-Rival   Club Goods  e.g. cable TV, honor society    Public Goods  e.g. national defense      Excludability refers to a supplier's ability to prevent consumption without compensation or more broadly to access to a good or resource. Private property rights underlie the ability to exclude. Non-excludable goods or resources have high costs of exclusion. Rivalry refers to the consumption of the good. A rivalrous good is a good for which one person's consumption of the goods prevents another from consuming it as well. Non-rivalrous goods can be consumed simultaneously by more than one person. Markets for private and club goods do not \"suffer\" failures, but the other two do.  Note that the key characteristic that generates a market failure for public and common goods is their non-excludability. When a good is non-excludable, every individual has the incentive to free ride , i.e. not to contribute to the provision of that good because they can reap the benefits from the good once it is provided by others. Whether the good is rival or not will determine what type of failure that market will have.  "
+},
+{
+  "id": "table-goods-categorization",
+  "level": "2",
+  "url": "sec-excludability-and-rivalry.html#table-goods-categorization",
+  "type": "Table",
+  "number": "4.2.1",
+  "title": "Categorization of Economic Goods",
+  "body": " Categorization of Economic Goods        Excludable  Non-Excludable    Rival   Private Goods  e.g. apples, textbooks    Common-Pool Resources  e.g. fisheries, forests     Non-Rival   Club Goods  e.g. cable TV, honor society    Public Goods  e.g. national defense     "
+},
+{
+  "id": "sec-pure-public-goods",
+  "level": "1",
+  "url": "sec-pure-public-goods.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Pure or Economic Public Goods",
+  "body": " Pure or Economic Public Goods  Economic public goods are goods that are non-excludable and non-rival. Without the ability to prevent free riding, suppliers will have no incentive to produce and bring such goods to market. The absence of the private property right to exclude means the market will underprovide pure public goods.  We begin with a simple example of a game illustrating the public goods problem. Imagine Rowan and Colm are the only two neighbors in a remote road in the countryside. Each year, snow piles up on the road and both are locked in. Each would benefit $600 from not being locked in. This amount is their individual maximum willingness to pay. The cost of snowplowing is $1,000 per road per season, which neither is willing to pay for individually. Could Rowan and Colm agree to split the $1,000 to get snowplowing? Let’s normalize the unplowed state to a baseline of $0, meaning a plowed road provides a relative benefit of +$600 to each neighbor[cite: 1]. The matrix below shows the payoffs for Rowan and Colm of the snowplowing game.   Snowplowing Game          Colm      Pay  Not Pay    Rowan  Pay  100, 100  -400, 600     Not Pay  600, -400  0, 0     What is the solution to this game? Thinking about the different ways to sustain cooperation, how might Rowan and Colm credibly commit to cooperate?  After thinking about solutions, let's reflect on a piece of wisdom from Economics professor and public intellectual Thomas Sowell: \"There are no solutions. There are only trade-offs.\" What does he mean by this and why do we care about it in the context of collective action problems (and public policy in general)? If the solution is government provision, the trade-off is taxation and coercion (forcing Colm to pay even if he'd rather stay snowed in)[cite: 1]. If the solution is an HOA, the trade-off is giving up private property autonomy[cite: 1].  "
+},
+{
+  "id": "table-snowplowing-game",
+  "level": "2",
+  "url": "sec-pure-public-goods.html#table-snowplowing-game",
+  "type": "Table",
+  "number": "4.3.1",
+  "title": "Snowplowing Game",
+  "body": " Snowplowing Game          Colm      Pay  Not Pay    Rowan  Pay  100, 100  -400, 600     Not Pay  600, -400  0, 0    "
+},
+{
+  "id": "sec-externalities",
+  "level": "1",
+  "url": "sec-externalities.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Externalities",
+  "body": " Externalities  Externalities differ from other types of private property right type problems in that they arise not from the inability to exclude but from the absence or uncertainty around certain costs and benefits of market activities. More broadly, an externality, or external effect, or spillover exists when one person's actions changes the payoff of another person or persons.  A negative externality exists when some individual's action imposes a cost to society or to a third party, a cost which he\/she does not take into account when making the decision. In basic economics, the supplier faces a private supply\/cost curve that is too low relative to a supply curve that internalizes all costs of production. For example, since no one owns clean air (historically at least), no one can charge polluting factories for releasing harmful gases into the atmosphere. There is too much pollution, because the factory managers do not have to account for the damage caused by polluted air to third parties.  A positive externality exists when some individual's action generates benefits to others that the person does not accrue for themselves. They face a lower demand than if they were to accrue all the benefits of their actions. For example, an educated individual benefits not only herself, but also society as a whole by increasing productivity. When she is trying to figure out whether she should get more education, she does not take into account the societal benefits of her education, and thus under-consumes education. There is too little education in society.  Here is a simple game theoretical way of understanding the problem of pollution. Imagine China and US have two choices in production: produce cleanly (“Be Clean”, the cooperative decision) or dirtily (“Pollute”). Clean production increases costs by 20% to each country. Each pollution decision imposes a cost of $5 on all countries (this is the external cost). The US produces $100 per period, while China produces $50 per period. The US production costs are $60 (or $72), and Chinese production costs are $30 (or $36). The matrix below shows the payoffs of the pollution game.   Pollution Game (US vs. China)                      ,     ,         ,     ,       Can you solve it? After you've solved it, can you \"solve\" for cooperation? The Nash Equilibrium of this game is (Pollute, Pollute), which yields a payoff of [cite: 1]. This contrasts with the Pareto optimal cooperative outcome of (Be Clean, Be Clean), which yields [cite: 1]. To solve for cooperation, we must change the payoffs through mechanisms like those learned in Penalty\/Reward Schemes[cite: 1]. This could involve a Pigouvian tax (carbon tax), a subsidy for green tech, or a binding treaty like the Paris Agreement[cite: 1].  "
+},
+{
+  "id": "table-pollution-game",
+  "level": "2",
+  "url": "sec-externalities.html#table-pollution-game",
+  "type": "Table",
+  "number": "4.4.1",
+  "title": "Pollution Game (US vs. China)",
+  "body": " Pollution Game (US vs. China)                      ,     ,         ,     ,      "
+},
+{
+  "id": "sec-common-pool-resources",
+  "level": "1",
+  "url": "sec-common-pool-resources.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "Common-Pool Resources (The Tragedy of the Commons)",
+  "body": " Common-Pool Resources (The Tragedy of the Commons)  Finally, we must consider the bottom-right quadrant of our table: Common-Pool Resources, often associated with the Tragedy of the Commons[cite: 1]. In these scenarios, the good is non-excludable but is rivalrous[cite: 1]. A classic example is overfishing in a shared lake[cite: 1]. Because the resource is rivalrous, the free-rider problem leads to depletion rather than just under-provision[cite: 1].  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
